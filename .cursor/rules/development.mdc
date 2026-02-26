@@ -1,0 +1,413 @@
+---
+description: General rules for WordPress Block Theme Development
+globs:
+alwaysApply: true
+---
+
+You are an expert in WordPress Block Themes (FSE - Full Site Editing), PHP, theme.json, block patterns, and modern WordPress development.
+
+## Key Principles
+- Write concise, technical responses with accurate PHP examples.
+- Follow WordPress coding standards and best practices.
+- Use object-oriented programming when appropriate, focusing on modularity.
+- Prefer iteration and modularization over duplication.
+- Use descriptive function, variable, and file names.
+- Prioritize block-based solutions over PHP custom code when possible.
+
+## Format Code
+- Use tabs for indentations in PHP files.
+- Space to align equals in same group of variable definitions.
+- Always write code and comments in English.
+- Documentation always add in `/docs` and add it to .distignore
+- Don't comment every line, only a chunk of lines with a functionality.
+- Align assignment operators (`=`) using spaces so that consecutive lines line up vertically.
+- Use the minimum number of spaces before the `=` needed to keep the column alignment.
+- Keep exactly one space on each side of the operator (`Squiz.WhiteSpace.OperatorSpacing`).
+- Minimize inline `style=""` attributes in HTML/PHP; prefer CSS classes defined in style.css or theme.json.
+- Use consistent, reusable CSS class names across components instead of duplicating styles.
+
+## Block Theme Structure
+```
+theme-name/
+├── style.css              (Required: Theme metadata and main styles)
+├── functions.php          (Optional: Enqueue scripts, register patterns)
+├── theme.json             (Required: Global settings and styles)
+├── templates/             (Required: Block templates)
+│   ├── index.html        (Required: Main template)
+│   ├── page-home.html    (Optional: Custom page template)
+│   ├── single.html       (Optional: Single post template)
+│   └── archive.html      (Optional: Archive template)
+├── parts/                 (Optional: Template parts)
+│   ├── header.html       (Reusable header)
+│   └── footer.html       (Reusable footer)
+├── patterns/              (Optional: Block patterns)
+│   ├── hero-section.php
+│   └── feature-cards.php
+├── assets/                (Optional: CSS, JS, images)
+│   ├── css/
+│   ├── js/
+│   └── images/
+│   └── fonts/
+└── README.md              (Recommended: Documentation)
+```
+
+## PHP/WordPress
+- Use PHP 7.4+ features when appropriate (e.g., typed properties, arrow functions).
+- Follow WordPress PHP Coding Standards.
+- Utilize WordPress core functions and APIs when available.
+- Implement proper error handling and logging.
+- Use WordPress's built-in functions for data validation and sanitization.
+- Use prepare() statements for secure database queries.
+- Use Yoda conditions ALWAYS.
+- PHP inline comments must start with capital letter and end with period character.
+- PHP inline comments should be concise.
+- All styles and javascript should be enqueued in functions.php.
+
+## Theme Setup
+- Import always the fonts in assets and enqueue them in theme.json
+- Don't use external sources.
+
+## theme.json Best Practices
+- Use theme.json as the single source of truth for global styles.
+- Define color palettes, typography scales, and spacing values in theme.json.
+- Use semantic color names (primary, secondary, etc.) instead of descriptive names (blue, red).
+- Enable/disable features explicitly in settings.
+- Use CSS custom properties for values that need to be accessed in CSS.
+- Version your theme.json (currently version 2 or 3).
+- Use presets for colors, gradients, font sizes, and spacing.
+
+### theme.json Structure
+```json
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": { "palette": [...] },
+    "typography": { "fontSizes": [...] },
+    "spacing": { "spacingSizes": [...] }
+  },
+  "styles": {
+    "color": { "background": "...", "text": "..." },
+    "elements": { "button": {...}, "link": {...} }
+  }
+}
+```
+
+## Block Templates (HTML)
+- Use HTML files with block markup for templates.
+- Follow WordPress block comment syntax: `<!-- wp:block-name {...} -->`.
+- Use template parts for reusable sections: `<!-- wp:template-part {"slug":"header"} /-->`.
+- Keep templates clean and semantic.
+- Use core WordPress blocks whenever possible.
+- Group related blocks with `<!-- wp:group -->`.
+- Add custom classes via className attribute when needed.
+- Use Query Loop blocks for dynamic content instead of PHP loops.
+- **Avoid inline `style` attributes** - use className and define styles in style.css or theme.json.
+- When block attributes require styling (spacing, colors), use theme.json presets (e.g., `var:preset|spacing|50`).
+
+### Template Example
+```html
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull">
+  <!-- wp:heading {"level":1} -->
+  <h1>Page Title</h1>
+  <!-- /wp:heading -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
+```
+
+## Block Patterns
+- Register patterns in PHP files inside `/patterns/` directory.
+- Use PHP docblock to define pattern metadata.
+- Patterns are reusable block layouts for common sections.
+- Test patterns in the pattern inserter before publishing.
+- Use semantic class names for custom styling.
+
+### Pattern Example
+```php
+<?php
+/**
+ * Title: Hero Section
+ * Slug: theme-name/hero-section
+ * Categories: featured
+ * Description: A hero section with heading and CTA
+ */
+?>
+<!-- wp:group {"align":"full"} -->
+<div class="wp-block-group alignfull">
+  <!-- Block content here -->
+</div>
+<!-- /wp:group -->
+```
+
+## CSS in Block Themes
+- Minimize custom CSS; use theme.json for global styles.
+- Add custom CSS only in style.css for theme-specific adjustments.
+- Use CSS custom properties defined in theme.json.
+- Follow BEM or similar naming convention for custom classes.
+- Keep CSS mobile-first with progressive enhancement.
+- Use modern CSS (Grid, Flexbox, CSS Variables).
+- **Avoid `!important` in CSS** - use more specific selectors or refactor HTML structure instead.
+- **Unify CSS classes** - create reusable component classes instead of duplicating styles.
+- Prefer semantic class names that describe purpose, not appearance (e.g., `.card-header` not `.blue-text`).
+- Group related styles together and use CSS comments to organize sections.
+
+### CSS Variables from theme.json
+```css
+.custom-element {
+  color: var(--wp--preset--color--primary);
+  font-size: var(--wp--preset--font-size--large);
+  padding: var(--wp--preset--spacing--50);
+}
+```
+
+### CSS Best Practices Examples
+
+**❌ BAD - Using inline styles:**
+```html
+<div style="padding: 20px; background: #000; color: white;">Content</div>
+```
+
+**✅ GOOD - Using CSS classes:**
+```html
+<div class="card-container">Content</div>
+```
+```css
+.card-container {
+  padding: var(--wp--preset--spacing--40);
+  background: var(--wp--preset--color--dark);
+  color: var(--wp--preset--color--base);
+}
+```
+
+**❌ BAD - Duplicating styles:**
+```css
+.hero-section { padding: 20px; background: #000; }
+.feature-section { padding: 20px; background: #000; }
+.footer-section { padding: 20px; background: #000; }
+```
+
+**✅ GOOD - Unified class:**
+```css
+.section-dark {
+  padding: var(--wp--preset--spacing--40);
+  background: var(--wp--preset--color--dark);
+}
+```
+
+**❌ BAD - Using !important:**
+```css
+.button {
+  color: blue !important;
+  font-size: 16px !important;
+}
+```
+
+**✅ GOOD - Specific selector:**
+```css
+.wp-block-button .wp-block-button__link.custom-button {
+  color: var(--wp--preset--color--primary);
+  font-size: var(--wp--preset--font-size--medium);
+}
+```
+
+## JavaScript
+- Don't use jQuery. Use Vanilla JavaScript.
+- Enqueue scripts properly in functions.php.
+- Use ES6+ features (const, let, arrow functions, modules).
+- Keep JavaScript minimal in block themes.
+- Use block.json and block editor APIs for custom blocks.
+
+## Query Loop Best Practices
+- Use Query Loop block for displaying dynamic posts instead of custom PHP loops.
+- Configure query parameters in block attributes (perPage, order, categoryIds, etc.).
+- Use Post Template block inside Query Loop for post layout.
+- Include Query No Results block for empty states.
+- Style query loop items with CSS targeting `.wp-block-post-template`.
+
+### Query Loop Example
+```html
+<!-- wp:query {"queryId":1,"query":{"perPage":3,"order":"desc","orderBy":"date"}} -->
+<div class="wp-block-query">
+  <!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+    <!-- wp:post-title {"isLink":true} /-->
+    <!-- wp:post-excerpt /-->
+  <!-- /wp:post-template -->
+  
+  <!-- wp:query-no-results -->
+    <!-- wp:paragraph -->
+    <p>No posts found.</p>
+    <!-- /wp:paragraph -->
+  <!-- /wp:query-no-results -->
+</div>
+<!-- /wp:query -->
+```
+
+## functions.php for Block Themes
+- Keep functions.php minimal; most configuration goes in theme.json.
+- Use functions.php for:
+  - Enqueuing additional stylesheets and scripts
+  - Registering pattern categories
+  - Adding theme support features
+  - Creating custom block styles variations
+
+### functions.php Example
+```php
+<?php
+/**
+ * Theme functions and definitions
+ */
+
+// Register pattern category.
+add_action( 'init', 'theme_register_pattern_categories' );
+function theme_register_pattern_categories() {
+  register_block_pattern_category(
+    'theme-patterns',
+    array( 'label' => __( 'Theme Patterns', 'theme-textdomain' ) )
+  );
+}
+```
+
+## Dependencies
+- WordPress 6.0+ (for Block Themes FSE support)
+- Node.js and npm (if building custom blocks)
+- Composer (optional, for advanced functionality)
+
+## WordPress Block Theme Best Practices
+- Use core WordPress blocks whenever possible before creating custom blocks.
+- Test theme with various block combinations.
+- Ensure templates work with and without specific blocks.
+- Use template parts for header/footer to maintain consistency.
+- Test accessibility with keyboard navigation and screen readers.
+- Implement proper security measures (nonces, data escaping, input sanitization).
+- Use semantic HTML through appropriate core blocks.
+- Test with different user roles and capabilities.
+
+## Key Conventions
+1. All templates must be HTML files with block markup.
+2. Global styles should be defined in theme.json, not CSS.
+3. Use Query Loop for dynamic content instead of custom PHP queries.
+4. Template parts should be used for reusable sections (header, footer).
+5. Patterns should be PHP files in /patterns/ directory.
+6. Custom CSS should be minimal and only for theme-specific adjustments.
+7. Use core WordPress blocks as building blocks.
+8. Test all templates in the Site Editor.
+9. Maintain proper file structure for block themes.
+10. Document custom patterns and templates in README.md.
+
+## Code Quality Rules (CRITICAL)
+1. **Minimize inline styles**: Avoid `style=""` attributes in HTML/PHP. Use CSS classes instead.
+2. **Unify CSS classes**: Create reusable component classes to avoid duplicating styles across files.
+3. **Avoid `!important`**: Use more specific CSS selectors or restructure HTML instead of forcing styles with `!important`.
+4. **Semantic naming**: Use descriptive class names that explain purpose (`.card-header`) not appearance (`.blue-bg`).
+5. **DRY principle**: Don't Repeat Yourself - if you write the same CSS rule twice, create a shared class.
+6. **Progressive enhancement**: Start with base styles, add enhancements for larger screens.
+
+## Block Markup Validation (CRITICAL – prevents "Intentar recuperación" errors)
+
+These are the exact mistakes that cause the WordPress block editor to show the recovery/validation notice.
+
+### 1 – `layout` attribute must be an object, never an array
+
+**❌ BAD – array causes validation failure:**
+```html
+<!-- wp:image {"style":{"layout":[]}} -->
+```
+
+**✅ GOOD – omit layout or use an empty object:**
+```html
+<!-- wp:image {"sizeSlug":"full","className":"hero-blob"} -->
+```
+
+Rule: if `layout` has no meaningful value, **remove the attribute entirely**.
+
+### 2 – Never include `"metadata"` in pattern source files
+
+WordPress adds `"metadata":{"categories":[...],"patternName":"...","name":"..."}` automatically when a pattern is inserted into a page. Including it in the PHP pattern file causes the block to appear duplicated/nested and triggers recovery.
+
+**❌ BAD:**
+```html
+<!-- wp:group {"metadata":{"categories":["close-prisma"],"patternName":"close-prisma-theme/hero-section","name":"Hero Section"},...} -->
+```
+
+**✅ GOOD:**
+```html
+<!-- wp:group {"align":"full","backgroundColor":"base","layout":{"type":"constrained"}} -->
+```
+
+### 3 – Every opening block tag must have exactly one closing tag
+
+Mismatched or duplicated closing tags are the most common cause of recovery errors.
+
+**❌ BAD – extra closing group at the end:**
+```html
+<!-- wp:group -->
+<div class="wp-block-group">
+  <!-- wp:columns --> ... <!-- /wp:columns -->
+  <!-- wp:group --> ... <!-- /wp:group -->   ← extra, mismatched
+</div>
+<!-- /wp:group -->
+```
+
+**✅ GOOD:**
+```html
+<!-- wp:group -->
+<div class="wp-block-group">
+  <!-- wp:columns --> ... <!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+```
+
+### 4 – Pattern category registration must run before patterns are processed
+
+WordPress registers filesystem patterns at `init` priority 9. Register categories at priority 1 to ensure they exist first.
+
+**❌ BAD:**
+```php
+add_action( 'init', 'my_register_pattern_categories' ); // default priority 10 → too late
+```
+
+**✅ GOOD:**
+```php
+add_action( 'init', 'my_register_pattern_categories', 1 ); // priority 1 → before patterns
+```
+
+### 5 – Block JSON attribute order matches WordPress canonical serialization
+
+When WordPress saves a block it reorders attributes. To avoid diffs/recovery, write attributes in this order when possible: `align`, `verticalAlignment`, `width`, `style`, `backgroundColor`/`textColor`, `className`, `layout`.
+
+### 6 – Void / self-closing blocks use ` /-->` (space before slash)
+
+**❌ BAD:**
+```html
+<!-- wp:site-title /-->   ← missing trailing space is OK but be consistent
+<!-- wp:image {"sizeSlug":"full"}-->   ← no space before closing
+```
+
+**✅ GOOD:**
+```html
+<!-- wp:site-title {"level":0} /-->
+<!-- wp:separator /-->
+```
+
+## Testing Checklist
+- [ ] Theme works in Site Editor (Appearance > Editor)
+- [ ] All templates display correctly
+- [ ] Template parts (header/footer) work across templates
+- [ ] Patterns appear in pattern inserter
+- [ ] theme.json colors/fonts apply globally
+- [ ] Query loops display posts dynamically
+- [ ] Responsive design works on mobile/tablet/desktop
+- [ ] Accessibility: keyboard navigation and screen readers
+- [ ] Performance: no unnecessary CSS/JS
+- [ ] Cross-browser compatibility
+
+## Resources
+- [Block Theme Documentation](https://developer.wordpress.org/themes/block-themes/)
+- [theme.json Reference](https://developer.wordpress.org/themes/advanced-topics/theme-json/)
+- [Block Editor Handbook](https://developer.wordpress.org/block-editor/)
+- [Query Loop Block](https://wordpress.org/documentation/article/query-loop-block/)
