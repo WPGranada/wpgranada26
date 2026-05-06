@@ -1,0 +1,116 @@
+/*
+Theme Name: WP Granada 26
+Theme URI: https://wpgranada.dev
+Author: WordPress Granada
+Author URI: https://wpgranada.dev
+Description: Block theme para la comunidad WordPress Granada. Diseñado para mostrar eventos, meetups y conectar con la comunidad local de profesionales WordPress.
+Version: 1.0.2
+Requires at least: 6.5
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wpgranada26
+Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translation-ready, wide-blocks
+*/
+
+/* Next event card */
+.next-event-card.wp-block-media-text {
+	border: 2px solid var(--wp--preset--color--primary);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.next-event-card .wp-block-media-text__media img {
+	border-radius: 0;
+}
+
+/* Section labels */
+.is-style-section-label {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+/* Next event card: image column fills card height */
+.next-event-image-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.next-event-image-col .wp-block-post-featured-image {
+	flex: 1;
+	min-height: 300px;
+}
+
+.next-event-image-col .wp-block-post-featured-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Past event cards */
+.past-event-card {
+	border: 1px solid var(--wp--preset--color--primary-muted);
+	border-radius: 12px;
+	overflow: hidden;
+	transition: box-shadow 0.2s ease;
+}
+
+.past-event-card:hover {
+	box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
+}
+
+.past-event-card .wp-block-post-featured-image img,
+.past-event-card .wp-block-image img {
+	border-radius: 0;
+}
+
+/* Channel cards */
+.channel-card {
+	border: 1px solid var(--wp--preset--color--primary-muted);
+	border-radius: 12px;
+	transition: box-shadow 0.2s ease;
+}
+
+.channel-card:hover {
+	box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
+}
+
+/* Stat cards */
+.stat-card {
+	border-radius: 12px;
+}
+
+/* Footer */
+.site-footer a {
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	color: var(--wp--preset--color--base);
+}
+
+/* Hero cover adjustments */
+.hero-section .wp-block-cover__inner-container {
+	max-width: 1000px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 782px) {
+	.next-event-card.wp-block-media-text {
+		border-radius: 8px;
+	}
+
+	.next-event-card .wp-block-media-text__content {
+		padding: var(--wp--preset--spacing--60);
+	}
+}
+
+/* Mobile: reduce section padding (inline styles require !important) */
+@media (max-width: 600px) {
+	.wp-block-cover.alignfull,
+	.wp-block-group.alignfull {
+		padding-left: var(--wp--preset--spacing--50) !important;
+		padding-right: var(--wp--preset--spacing--50) !important;
+	}
+}

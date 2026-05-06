@@ -1,0 +1,44 @@
+{
+  "siteUrl": "http://localhost:8882",
+  "phpVersion": "8.4",
+  "wordpressVersion": "6.9.4",
+  "plugins": [
+    {
+      "name": "akismet",
+      "status": "inactive",
+      "version": "5.6"
+    },
+    {
+      "name": "contact-form-7",
+      "status": "active",
+      "version": "6.1.5"
+    },
+    {
+      "name": "hello",
+      "status": "inactive",
+      "version": "1.7.2"
+    }
+  ],
+  "themes": [
+    {
+      "name": "WPGranada",
+      "status": "active",
+      "version": "1.0.2"
+    },
+    {
+      "name": "twentytwentyfive",
+      "status": "inactive",
+      "version": "1.4"
+    },
+    {
+      "name": "twentytwentyfour",
+      "status": "inactive",
+      "version": "1.4"
+    },
+    {
+      "name": "twentytwentythree",
+      "status": "inactive",
+      "version": "1.6"
+    }
+  ]
+}

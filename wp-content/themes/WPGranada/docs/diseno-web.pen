@@ -1,0 +1,2070 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "6ejx0",
+      "x": -19,
+      "y": 433,
+      "name": "WP Granada - WordPress Palette",
+      "width": 1440,
+      "fill": "#fff",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Iq1mm",
+          "name": "header",
+          "width": "fill_container",
+          "padding": [
+            24,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "vhorY",
+              "name": "logoArea",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "3DVks",
+                  "name": "logoCircle",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#3858e9",
+                        "position": 0
+                      },
+                      {
+                        "color": "#213fd4",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 50,
+                  "height": 50
+                },
+                {
+                  "type": "text",
+                  "id": "hwKr1",
+                  "name": "logoText",
+                  "fill": "#1e1e1e",
+                  "content": "WordPress Granada",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AmV0j",
+              "name": "nav",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uELJW",
+                  "name": "navLink1",
+                  "fill": "#3858e9",
+                  "content": "Eventos",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "WnoJq",
+                  "name": "navLink2",
+                  "fill": "#40464d",
+                  "content": "Comunidad",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "FVEMf",
+                  "name": "navLink3",
+                  "fill": "#40464d",
+                  "content": "Ser Ponente",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "s7Ipz",
+                  "name": "navLink4",
+                  "fill": "#40464d",
+                  "content": "Contacto",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Gzkwg",
+          "name": "hero",
+          "metadata": {
+            "type": "unsplash",
+            "username": "productschool",
+            "link": "https://unsplash.com/@productschool",
+            "author": "Product School"
+          },
+          "width": "fill_container",
+          "fill": [
+            {
+              "type": "image",
+              "opacity": 0.5,
+              "enabled": true,
+              "url": "54094388382_f7f18fde9a_k.jpg",
+              "mode": "fill"
+            },
+            "#eff2ff"
+          ],
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "f824J",
+              "name": "heroBgImage",
+              "opacity": 0.3,
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1772058607559.png",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "yRDXa",
+              "name": "heroLabel",
+              "fill": "#c7d1ff",
+              "cornerRadius": 100,
+              "padding": [
+                10,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iSdWX",
+                  "name": "heroLabelText",
+                  "fill": "#213fd4",
+                  "content": "✨ Comunidad Local WordPress",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "BTvjU",
+              "name": "heroTitle",
+              "fill": "#1e1e1e",
+              "textGrowth": "fixed-width",
+              "width": 1000,
+              "content": "Desarrolladores y profesionales web de Granada",
+              "lineHeight": 1.1,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 60,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "jpiXy",
+              "name": "heroSubtitle",
+              "fill": "#40464d",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Meetups mensuales donde compartimos conocimiento, experiencias y networking. Una comunidad vibrante de apasionados por WordPress.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "IYjgI",
+              "name": "heroCTAs",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SPHIC",
+                  "name": "ctaPrimary",
+                  "fill": "#3858e9",
+                  "cornerRadius": 8,
+                  "padding": [
+                    20,
+                    40
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GKe9Y",
+                      "name": "ctaPrimaryText",
+                      "fill": "#fff",
+                      "content": "Próximo evento →",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Sdwoi",
+                  "name": "ctaSecondary",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#3858e9"
+                  },
+                  "padding": [
+                    20,
+                    40
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nedDq",
+                      "name": "ctaSecondaryText",
+                      "fill": "#3858e9",
+                      "content": "Únete en Meetup",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "y4HsP",
+          "name": "nextEventSection",
+          "width": "fill_container",
+          "fill": "#fff",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "8ZqY8",
+              "name": "nextEventHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AFYL5",
+                  "name": "nextEventLabel",
+                  "fill": "#3858e9",
+                  "content": "PRÓXIMO EVENTO",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "L1i6W",
+                  "name": "nextEventTitle",
+                  "fill": "#1e1e1e",
+                  "content": "No te lo pierdas",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eb6hi",
+              "name": "nextEventCard",
+              "width": "fill_container",
+              "height": 520,
+              "fill": "#fff",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#3858e9"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6t6Pt",
+                  "name": "nextEventImgFrame",
+                  "width": 720,
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1772058374274.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": [
+                    12,
+                    0,
+                    0,
+                    12
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "016Fg",
+                  "name": "nextEventContent",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 48,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "8bB0H",
+                      "name": "nextEventDateBadge",
+                      "fill": "#eff2ff",
+                      "cornerRadius": 6,
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "my2OP",
+                          "name": "nextEventDate",
+                          "fill": "#213fd4",
+                          "content": "15 MAR 2026 • 19:00",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "nXzCL",
+                      "name": "nextEventName",
+                      "fill": "#1e1e1e",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Las ventajas de tener una IA Local",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 36,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "0Ftc9",
+                      "name": "nextEventDesc",
+                      "fill": "#656a71",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Aprende a implementar modelos de inteligencia artificial directamente en tus proyectos WordPress sin depender de servicios externos. Descubre las ventajas de tener control total sobre tus datos y procesos.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aSJUL",
+                      "name": "nextEventButton",
+                      "fill": "#3858e9",
+                      "cornerRadius": 8,
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lOzLS",
+                          "name": "nextEventButtonText",
+                          "fill": "#fff",
+                          "content": "Reservar plaza →",
+                          "fontFamily": "Inter",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NAt9v",
+          "name": "pastEventsSection",
+          "width": "fill_container",
+          "fill": "#eff2ff",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "VfOGa",
+              "name": "pastEventsHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dJSdJ",
+                  "name": "pastEventsLabel",
+                  "fill": "#656a71",
+                  "content": "EVENTOS ANTERIORES",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "seEVP",
+                  "name": "pastEventsTitle",
+                  "fill": "#1e1e1e",
+                  "content": "Lo que hemos compartido",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wT2vj",
+              "name": "pastEventsGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "9h9Ea",
+                  "name": "pastEvent1",
+                  "width": "fill_container",
+                  "height": 420,
+                  "fill": "#fff",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#c7d1ff"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "G28LE",
+                      "name": "pastEvent1Img",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772058414992.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": [
+                        12,
+                        12,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1lp1c",
+                      "name": "pastEvent1Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AGSXY",
+                          "name": "pastEvent1Date",
+                          "fill": "#979aa1",
+                          "content": "15 FEB 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tvuxs",
+                          "name": "pastEvent1Title",
+                          "fill": "#1e1e1e",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Creencias que limitan tu potencial",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lrqVj",
+                          "name": "pastEvent1Desc",
+                          "fill": "#656a71",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Charla sobre desarrollo personal y mentalidad de crecimiento para profesionales",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Eom4d",
+                  "name": "pastEvent2",
+                  "width": "fill_container",
+                  "height": 420,
+                  "fill": "#fff",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#c7d1ff"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nS06e",
+                      "name": "pastEvent2Img",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772058421794.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": [
+                        12,
+                        12,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zheo9",
+                      "name": "pastEvent2Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xI4ju",
+                          "name": "pastEvent2Date",
+                          "fill": "#979aa1",
+                          "content": "22 ENE 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "6OZaP",
+                          "name": "pastEvent2Title",
+                          "fill": "#1e1e1e",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "La App de WooCommerce",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ilm0J",
+                          "name": "pastEvent2Desc",
+                          "fill": "#656a71",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Gestiona tu tienda online desde el móvil con la aplicación oficial de WooCommerce",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qDAaS",
+                  "name": "pastEvent3",
+                  "width": "fill_container",
+                  "height": 420,
+                  "fill": "#fff",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#c7d1ff"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "UJ9cG",
+                      "name": "pastEvent3Img",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772058429032.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": [
+                        12,
+                        12,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7ciIw",
+                      "name": "pastEvent3Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DyXKM",
+                          "name": "pastEvent3Date",
+                          "fill": "#979aa1",
+                          "content": "18 DIC 2025",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JyGdT",
+                          "name": "pastEvent3Title",
+                          "fill": "#1e1e1e",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Convertir en Black Friday",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Sj8qx",
+                          "name": "pastEvent3Desc",
+                          "fill": "#656a71",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Estrategias para maximizar ventas en campañas de temporada con WordPress",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "47cGQ",
+          "name": "statsSection",
+          "width": "fill_container",
+          "fill": "#213fd4",
+          "layout": "vertical",
+          "gap": 56,
+          "padding": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "m9Ip1",
+              "name": "statsHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pDa8W",
+                  "name": "statsTitle",
+                  "fill": "#fff",
+                  "content": "Una comunidad en crecimiento",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "Y51FA",
+                  "name": "statsSubtitle",
+                  "fill": "#9fb1ff",
+                  "content": "Profesionales unidos por la pasión de WordPress",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oJnBJ",
+              "name": "statsGrid",
+              "width": "fill_container",
+              "gap": 32,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "elmqf",
+                  "name": "stat1",
+                  "width": 350,
+                  "fill": "#3858e9",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 48,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CPtW6",
+                      "name": "stat1Number",
+                      "fill": "#fff",
+                      "content": "350+",
+                      "lineHeight": 0.9,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 72,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vbFym",
+                      "name": "stat1Label",
+                      "fill": "#c7d1ff",
+                      "content": "Miembros activos",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fUN4X",
+                  "name": "stat2",
+                  "width": 350,
+                  "fill": "#3858e9",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 48,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fftgR",
+                      "name": "stat2Number",
+                      "fill": "#fff",
+                      "content": "72",
+                      "lineHeight": 0.9,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 72,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "loQMo",
+                      "name": "stat2Label",
+                      "fill": "#c7d1ff",
+                      "content": "Meetups realizadas",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Vmnmq",
+                  "name": "stat3",
+                  "width": 350,
+                  "fill": "#3858e9",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 48,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XD7Ck",
+                      "name": "stat3Number",
+                      "fill": "#fff",
+                      "content": "12",
+                      "lineHeight": 0.9,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 72,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QpVco",
+                      "name": "stat3Label",
+                      "fill": "#c7d1ff",
+                      "content": "Eventos al año",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "giaKA",
+          "name": "eventsWrapper",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 80,
+          "padding": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "XRUfc",
+              "name": "nextEventSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Mz06o",
+                  "name": "nextEventHeader",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gU7C8",
+                      "name": "nextEventLabel",
+                      "fill": "#3858e9",
+                      "content": "PRÓXIMO EVENTO",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "FEVx4",
+                      "name": "nextEventTitle",
+                      "fill": "#1e1e1e",
+                      "content": "No te lo pierdas",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 48,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7X5es",
+                  "name": "nextEventCard",
+                  "width": "fill_container",
+                  "height": 520,
+                  "fill": "#fff",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#3858e9"
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "3lr7u",
+                      "name": "nextEventImage",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "puru_rj",
+                        "link": "https://unsplash.com/@puru_rj",
+                        "author": "Puru Raj"
+                      },
+                      "width": 600,
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1731977787486-4be263e36777?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIwNTg0Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": [
+                        12,
+                        0,
+                        0,
+                        12
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PhqyU",
+                      "name": "nextEventContent",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "layout": "vertical",
+                      "gap": 24,
+                      "padding": 48,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "SBZM6",
+                          "name": "nextEventBadge",
+                          "fill": "#3858e9",
+                          "cornerRadius": 100,
+                          "padding": [
+                            10,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "U9osM",
+                              "name": "nextEventDate",
+                              "fill": "#fff",
+                              "content": "15 MAR 2026 • 19:00",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "ruvZ3",
+                          "name": "nextEventTitleText",
+                          "fill": "#1e1e1e",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Las ventajas de tener una IA Local",
+                          "lineHeight": 1.2,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 36,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yNaTF",
+                          "name": "nextEventDesc",
+                          "fill": "#656a71",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Descubre cómo implementar y aprovechar modelos de inteligencia artificial directamente en local para tus proyectos WordPress, sin depender de servicios externos. Aprenderás sobre herramientas, configuración y casos de uso prácticos.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "t5BuL",
+                          "name": "nextEventCTA",
+                          "fill": "#3858e9",
+                          "cornerRadius": 8,
+                          "padding": [
+                            16,
+                            32
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hZ7i2",
+                              "name": "nextEventCTAText",
+                              "fill": "#fff",
+                              "content": "Registrarse en Meetup →",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xmMeW",
+              "name": "pastEventsSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LJnRs",
+                  "name": "pastEventsHeader",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "96sl5",
+                      "name": "pastEventsLabel",
+                      "fill": "#656a71",
+                      "content": "EVENTOS ANTERIORES",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "d1OCX",
+                      "name": "pastEventsTitle",
+                      "fill": "#1e1e1e",
+                      "content": "Revive nuestras meetups",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 48,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oxOjE",
+                  "name": "pastEventsGrid",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pvTym",
+                      "name": "pastEvent1",
+                      "width": "fill_container",
+                      "height": 460,
+                      "fill": "#fff",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#c7d1ff"
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lcokl",
+                          "name": "pastEvent1Img",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "vhtm",
+                            "link": "https://unsplash.com/@vhtm",
+                            "author": "V H"
+                          },
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1768987439382-894ea4e2a736?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIwNTg0Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": [
+                            12,
+                            12,
+                            0,
+                            0
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LLSBC",
+                          "name": "pastEvent1Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "R3aQa",
+                              "name": "pastEvent1Date",
+                              "fill": "#656a71",
+                              "content": "20 ENE 2026",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "1wuoQ",
+                              "name": "pastEvent1Title",
+                              "fill": "#1e1e1e",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "De visitas a ventas: SEO para WooCommerce",
+                              "lineHeight": 1.3,
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "IGypj",
+                              "name": "pastEvent1Desc",
+                              "fill": "#656a71",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Estrategias efectivas de SEO aplicadas a tiendas online",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LgRZj",
+                      "name": "pastEvent2",
+                      "width": "fill_container",
+                      "height": 460,
+                      "fill": "#fff",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#c7d1ff"
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YIg4i",
+                          "name": "pastEvent2Img",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "laurachouette",
+                            "link": "https://unsplash.com/@laurachouette",
+                            "author": "Laura Chouette"
+                          },
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1627487633895-108c8eff7006?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIwNTg0Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": [
+                            12,
+                            12,
+                            0,
+                            0
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "oyUri",
+                          "name": "pastEvent2Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "oRYB8",
+                              "name": "pastEvent2Date",
+                              "fill": "#656a71",
+                              "content": "18 DIC 2025",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "oe7QQ",
+                              "name": "pastEvent2Title",
+                              "fill": "#1e1e1e",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Gutenberg: El futuro del editor",
+                              "lineHeight": 1.3,
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "SSnID",
+                              "name": "pastEvent2Desc",
+                              "fill": "#656a71",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Bloques personalizados y patrones para sitios increíbles",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OBX5U",
+                      "name": "pastEvent3",
+                      "width": "fill_container",
+                      "height": 460,
+                      "fill": "#fff",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#c7d1ff"
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "udcZi",
+                          "name": "pastEvent3Img",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "jakubpabis",
+                            "link": "https://unsplash.com/@jakubpabis",
+                            "author": "Jakub Pabis"
+                          },
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1643930493625-aa561ffbf6ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIwNTg0Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": [
+                            12,
+                            12,
+                            0,
+                            0
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "viic6",
+                          "name": "pastEvent3Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "0oqlu",
+                              "name": "pastEvent3Date",
+                              "fill": "#656a71",
+                              "content": "15 NOV 2025",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "QrH1H",
+                              "name": "pastEvent3Title",
+                              "fill": "#1e1e1e",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "WordPress y accesibilidad web",
+                              "lineHeight": 1.3,
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "hc0lX",
+                              "name": "pastEvent3Desc",
+                              "fill": "#656a71",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Creando sitios web inclusivos y accesibles para todos",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QPS13",
+          "name": "channelsSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "oQtLe",
+              "name": "channelsHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tpFtZ",
+                  "name": "channelsLabel",
+                  "fill": "#3858e9",
+                  "content": "ÚNETE A LA CONVERSACIÓN",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "6uJPV",
+                  "name": "channelsTitle",
+                  "fill": "#1e1e1e",
+                  "content": "Conecta con nosotros",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jF50D",
+              "name": "channelsGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IYlHI",
+                  "name": "channel1",
+                  "width": "fill_container",
+                  "fill": "#fff",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#c7d1ff"
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "U7DmG",
+                      "name": "channel1Icon",
+                      "width": 40,
+                      "height": 40,
+                      "iconFontName": "calendar",
+                      "iconFontFamily": "lucide",
+                      "fill": "#3858e9"
+                    },
+                    {
+                      "type": "text",
+                      "id": "5CLvv",
+                      "name": "channel1Title",
+                      "fill": "#1e1e1e",
+                      "content": "Meetup",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "8Huct",
+                      "name": "channel1Desc",
+                      "fill": "#656a71",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Regístrate en nuestros eventos y recibe notificaciones de cada meetup",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E2df6",
+                      "name": "channel1Link",
+                      "fill": "#3858e9",
+                      "content": "Ir a Meetup →",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "78D9G",
+                  "name": "channel2",
+                  "width": "fill_container",
+                  "fill": "#fff",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#c7d1ff"
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "2hOit",
+                      "name": "channel2Icon",
+                      "width": 40,
+                      "height": 40,
+                      "iconFontName": "youtube",
+                      "iconFontFamily": "lucide",
+                      "fill": "#3858e9"
+                    },
+                    {
+                      "type": "text",
+                      "id": "9ZGRE",
+                      "name": "channel2Title",
+                      "fill": "#1e1e1e",
+                      "content": "YouTube",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GuFB7",
+                      "name": "channel2Desc",
+                      "fill": "#656a71",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Revive las charlas y aprende con los vídeos de nuestros eventos pasados",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZorSO",
+                      "name": "channel2Link",
+                      "fill": "#3858e9",
+                      "content": "Ver canal →",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Twhkm",
+                  "name": "channel3",
+                  "width": "fill_container",
+                  "fill": "#fff",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#c7d1ff"
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "97SLx",
+                      "name": "channel3Icon",
+                      "width": 40,
+                      "height": 40,
+                      "iconFontName": "message-circle",
+                      "iconFontFamily": "lucide",
+                      "fill": "#3858e9"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aCYnu",
+                      "name": "channel3Title",
+                      "fill": "#1e1e1e",
+                      "content": "Telegram",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "8M4la",
+                      "name": "channel3Desc",
+                      "fill": "#656a71",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Únete a nuestro grupo para charlar y estar al día con la comunidad",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "3JHih",
+                      "name": "channel3Link",
+                      "fill": "#3858e9",
+                      "content": "Unirse →",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KleKt",
+          "name": "ctaSection",
+          "width": "fill_container",
+          "fill": "#eff2ff",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "qhvLC",
+              "name": "ctaTitle",
+              "fill": "#1e1e1e",
+              "content": "¿Quieres ser ponente?",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 52,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "TQwdG",
+              "name": "ctaDesc",
+              "fill": "#40464d",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Comparte tu conocimiento con la comunidad. Buscamos speakers apasionados que quieran inspirar a otros profesionales.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "SImSm",
+              "name": "ctaButton",
+              "fill": "#3858e9",
+              "cornerRadius": 8,
+              "padding": [
+                20,
+                40
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "E9081",
+                  "name": "ctaButtonText",
+                  "fill": "#fff",
+                  "content": "Enviar propuesta →",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EGtMH",
+          "name": "footer",
+          "width": "fill_container",
+          "fill": "#1e1e1e",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "d35fl",
+              "name": "footerTop",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aUNBU",
+                  "name": "footerBrand",
+                  "width": 400,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yuEp7",
+                      "name": "footerLogoArea",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "X2rp3",
+                          "name": "footerLogoCircle",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 135,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#3858e9",
+                                "position": 0
+                              },
+                              {
+                                "color": "#213fd4",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "width": 44,
+                          "height": 44
+                        },
+                        {
+                          "type": "text",
+                          "id": "u9ehF",
+                          "name": "footerLogoText",
+                          "fill": "#fff",
+                          "content": "WordPress Granada",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "lFVaH",
+                      "name": "footerTagline",
+                      "fill": "#979aa1",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Comunidad local de profesionales WordPress en Granada. Meetups mensuales, networking y aprendizaje continuo.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KS0GE",
+                  "name": "footerLinks",
+                  "gap": 80,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Q54HE",
+                      "name": "footerCol1",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A1uf5",
+                          "name": "footerCol1Title",
+                          "fill": "#fff",
+                          "content": "Eventos",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Rlb4e",
+                          "name": "footerCol1Link1",
+                          "fill": "#979aa1",
+                          "content": "Próximos eventos",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NuRSA",
+                          "name": "footerCol1Link2",
+                          "fill": "#979aa1",
+                          "content": "Eventos pasados",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fqLjk",
+                          "name": "footerCol1Link3",
+                          "fill": "#979aa1",
+                          "content": "Calendario",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3GYJL",
+                      "name": "footerCol2",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l3uNo",
+                          "name": "footerCol2Title",
+                          "fill": "#fff",
+                          "content": "Comunidad",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bKJBs",
+                          "name": "footerCol2Link1",
+                          "fill": "#979aa1",
+                          "content": "Sobre nosotros",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2dxUz",
+                          "name": "footerCol2Link2",
+                          "fill": "#979aa1",
+                          "content": "Ser ponente",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "l5PLx",
+                          "name": "footerCol2Link3",
+                          "fill": "#979aa1",
+                          "content": "Código de conducta",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eKodA",
+                      "name": "footerCol3",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nwR3o",
+                          "name": "footerCol3Title",
+                          "fill": "#fff",
+                          "content": "Conecta",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2g9nr",
+                          "name": "footerCol3Link1",
+                          "fill": "#979aa1",
+                          "content": "Meetup",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mIu55",
+                          "name": "footerCol3Link2",
+                          "fill": "#979aa1",
+                          "content": "YouTube",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Oqz3j",
+                          "name": "footerCol3Link3",
+                          "fill": "#979aa1",
+                          "content": "Telegram",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "9lApS",
+              "name": "footerDivider",
+              "fill": "#40464d",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "E25IQ",
+              "name": "footerBottom",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "34kNe",
+                  "name": "footerCopyright",
+                  "fill": "#656a71",
+                  "content": "© 2026 WordPress Granada. Comunidad local de Granada.",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "hb0t5",
+                  "name": "footerSocial",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "JW8zX",
+                      "name": "socialIcon1",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "twitter",
+                      "iconFontFamily": "lucide",
+                      "fill": "#656a71"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "ecQgu",
+                      "name": "socialIcon2",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "youtube",
+                      "iconFontFamily": "lucide",
+                      "fill": "#656a71"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "LBRgD",
+                      "name": "socialIcon3",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "github",
+                      "iconFontFamily": "lucide",
+                      "fill": "#656a71"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-orange": {
+      "type": "color",
+      "value": "#E07B54"
+    },
+    "accent-teal": {
+      "type": "color",
+      "value": "#0D6E6E"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "bg-muted": {
+      "type": "color",
+      "value": "#F8F8F8"
+    },
+    "bg-page": {
+      "type": "color",
+      "value": "#FAFAFA"
+    },
+    "border-divider": {
+      "type": "color",
+      "value": "#F0F0F0"
+    },
+    "border-primary": {
+      "type": "color",
+      "value": "#E5E5E5"
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 12
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 8
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 4
+    },
+    "spacing-2xl": {
+      "type": "number",
+      "value": 32
+    },
+    "spacing-lg": {
+      "type": "number",
+      "value": 16
+    },
+    "spacing-md": {
+      "type": "number",
+      "value": 12
+    },
+    "spacing-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "spacing-xl": {
+      "type": "number",
+      "value": 24
+    },
+    "spacing-xs": {
+      "type": "number",
+      "value": 4
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#AAAAAA"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#666666"
+    },
+    "text-tertiary": {
+      "type": "color",
+      "value": "#888888"
+    }
+  }
+}
