@@ -1,116 +1,368 @@
-/*
-Theme Name: WP Granada 26
-Theme URI: https://wpgranada.dev
-Author: WordPress Granada
-Author URI: https://wpgranada.dev
-Description: Block theme para la comunidad WordPress Granada. Diseñado para mostrar eventos, meetups y conectar con la comunidad local de profesionales WordPress.
-Version: 1.0.2
-Requires at least: 6.5
-Tested up to: 6.7
-Requires PHP: 7.4
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: wpgranada26
-Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translation-ready, wide-blocks
-*/
 
-/* Next event card */
-.next-event-card.wp-block-media-text {
-	border: 2px solid var(--wp--preset--color--primary);
-	border-radius: 12px;
-	overflow: hidden;
+* {
+    box-sizing: border-box;
 }
 
-.next-event-card .wp-block-media-text__media img {
-	border-radius: 0;
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
-/* Section labels */
-.is-style-section-label {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+/* ===== FONDO GLOBAL ===== */
+html, body, .wp-site-blocks {
+    background: radial-gradient(circle at top, #1e293b, #020617 80%) !important;
 }
 
-/* Next event card: image column fills card height */
-.next-event-image-col {
-	display: flex;
-	flex-direction: column;
+
+
+
+.wp-block-group[style],
+.wp-block-group.has-background,
+.wp-block-cover {
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
-.next-event-image-col .wp-block-post-featured-image {
-	flex: 1;
-	min-height: 300px;
+/* BLOQUE PRINCIPAL GRANDE */
+.wp-block-group.alignfull {
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
-.next-event-image-col .wp-block-post-featured-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+/* ===== CONTENEDOR ===== */
+.wp-site-blocks {
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* Past event cards */
-.past-event-card {
-	border: 1px solid var(--wp--preset--color--primary-muted);
-	border-radius: 12px;
-	overflow: hidden;
-	transition: box-shadow 0.2s ease;
+/* ===== SECCIONES ===== */
+.wp-block-group {
+    padding: 60px 20px;
 }
 
-.past-event-card:hover {
-	box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
+
+/*  CAJA PRINCIPAL (BIEN OSCURA) */
+
+.wp-block-heading + .wp-block-group {
+    background: rgba(15, 23, 42, 0.7) !important;
+    border-radius: 16px;
+    padding: 40px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
-.past-event-card .wp-block-post-featured-image img,
-.past-event-card .wp-block-image img {
-	border-radius: 0;
+/* ===== TARJETAS ===== */
+.wp-block-group:not(.alignfull) {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
 }
 
-/* Channel cards */
-.channel-card {
-	border: 1px solid var(--wp--preset--color--primary-muted);
-	border-radius: 12px;
-	transition: box-shadow 0.2s ease;
+.wp-block-group:not(.alignfull):hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
 }
 
-.channel-card:hover {
-	box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
+/* ===== TIPOGRAFÍA ===== */
+.wp-site-blocks h1,
+.wp-site-blocks h2,
+.wp-site-blocks h3 {
+    color: white !important;
 }
 
-/* Stat cards */
-.stat-card {
-	border-radius: 12px;
+.wp-site-blocks h1 {
+    font-size: 42px;
 }
 
-/* Footer */
+.wp-site-blocks h2 {
+    font-size: 30px;
+}
+
+.wp-site-blocks p {
+    color: #cbd5e1;
+}
+
+/* ===== BOTONES ===== */
+.wp-block-button__link {
+    background: linear-gradient(135deg, #6366f1, #3b82f6) !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.wp-block-button__link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(99,102,241,0.5);
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #60a5fa;
+}
+
+a:hover {
+    color: #93c5fd;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+    background: #020617 !important;
+    padding: 60px 20px;
+}
+
+/* GRID FOOTER */
+.site-footer .wp-block-columns {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+/* COLUMNAS */
+.site-footer .wp-block-column {
+    display: flex;
+}
+
+/* TARJETAS FOOTER */
+.site-footer .wp-block-group {
+    width: 100%;
+    padding: 25px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* SIN ALTURAS */
+.site-footer .wp-block-group {
+    height: auto !important;
+    min-height: auto !important;
+}
+
+/* LINKS FOOTER */
 .site-footer a {
-	text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
 }
 
-.site-footer a:hover {
-	color: var(--wp--preset--color--base);
+/* TITULOS FOOTER */
+.site-footer h3,
+.site-footer h4 {
+    margin-bottom: 10px;
+    color: white;
 }
 
-/* Hero cover adjustments */
-.hero-section .wp-block-cover__inner-container {
-	max-width: 1000px;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .site-footer .wp-block-columns {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-/* Responsive adjustments */
-@media (max-width: 782px) {
-	.next-event-card.wp-block-media-text {
-		border-radius: 8px;
-	}
-
-	.next-event-card .wp-block-media-text__content {
-		padding: var(--wp--preset--spacing--60);
-	}
-}
-
-/* Mobile: reduce section padding (inline styles require !important) */
 @media (max-width: 600px) {
-	.wp-block-cover.alignfull,
-	.wp-block-group.alignfull {
-		padding-left: var(--wp--preset--spacing--50) !important;
-		padding-right: var(--wp--preset--spacing--50) !important;
-	}
+    .site-footer .wp-block-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*  TEXTO BLOQUE EN BLANCO */
+
+
+/* TODO el texto dentro del bloque principal */
+.wp-block-heading + .wp-block-group,
+.wp-block-heading + .wp-block-group p,
+.wp-block-heading + .wp-block-group em,
+.wp-block-heading + .wp-block-group strong {
+    color: #ffffff !important;
+}
+
+
+/* ARREGLAR BLOQUE CONECTA */
+
+
+/* QUITAR EL FONDO DEGRADADO */
+.wp-block-columns[style],
+.wp-block-columns.has-background {
+    background: transparent !important;
+}
+
+/* QUITAR CUALQUIER COLOR INLINE */
+.wp-block-columns[style*="background"] {
+    background: transparent !important;
+}
+
+/* APLICAR MISMO ESTILO QUE EL RESTO */
+.wp-block-columns {
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+/* TARJETAS DENTRO DEL BLOQUE */
+.wp-block-columns .wp-block-column > .wp-block-group {
+    background: rgba(255,255,255,0.04) !important;
+    border-radius: 16px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* TEXTO EN BLANCO */
+.wp-block-columns h2,
+.wp-block-columns h3,
+.wp-block-columns p {
+    color: #e2e8f0 !important;
+}
+
+/*  QUITAR CAJA DEL TITULO "CONECTA..." */
+
+
+/* eliminar fondo y borde del contenedor del título */
+.wp-block-group:has(> h2) {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* ajustar separación del título */
+.wp-block-group:has(> h2) h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* BLOQUE EVENTOS */
+
+
+/* quitar fondo raro del bloque */
+.wp-block-query,
+.wp-block-post-template {
+    background: transparent !important;
+}
+
+/* contenedor general */
+.wp-block-query {
+    padding: 80px 20px;
+    margin: 60px 0;
+}
+
+/* grid limpio */
+.wp-block-post-template {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/*  TARJETAS ESTILO HOME */
+
+
+/* cada noticia */
+.wp-block-post {
+    background: rgba(255,255,255,0.04);
+    padding: 20px;
+    border-radius: 16px;
+
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+
+    transition: all 0.3s ease;
+}
+
+/* hover pro */
+.wp-block-post:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+
+
+/*  IMAGENES */
+
+.wp-block-post img {
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+/* TITULOS */
+
+.wp-block-post-title {
+    font-size: 22px !important;
+    color: #60a5fa !important;
+    margin-bottom: 10px;
+}
+
+
+/*  FECHA */
+
+.wp-block-post-date {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+
+/*  RESPONSIVE */
+
+@media (max-width: 900px) {
+    .wp-block-post-template {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .wp-block-post-template {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*  ARREGLAR ESPACIO REAL */
+
+
+/* título más grande de verdad */
+.wp-block-query > h2 {
+    font-size: 56px !important;
+    margin-bottom: 10px !important; /* 🔥 quita el hueco */
+}
+
+/* grid de posts pegado al título */
+.wp-block-query .wp-block-post-template {
+    margin-top: 0 !important; /* 🔥 elimina separación */
+}
+
+/* contenedor entero menos aire */
+.wp-block-query {
+    padding-top: 10px !important; /* 🔥 quita espacio superior */
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .site-footer .wp-block-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.wp-site-blocks {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    padding: 0 30px;
 }
