@@ -692,3 +692,25 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
         padding: 1.5rem;
     }
 }
+/* Responsive hero adjustments */
+@media (max-width: 768px) {
+    .wpgranada-hero h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+    .wpgranada-hero {
+        padding-top: var(--wp--preset--spacing--60);
+        padding-bottom: var(--wp--preset--spacing--60);
+    }
+
+    .wpgranada-hero .wp-block-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .wpgranada-hero .wp-block-button__link {
+        width: 100%;
+        text-align: center;
+    }
+}
