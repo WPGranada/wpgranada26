@@ -14,103 +14,681 @@ Text Domain: wpgranada26
 Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translation-ready, wide-blocks
 */
 
+/* -------------------------------------------------------
+   Estilos base del tema
+   ------------------------------------------------------- */
+
 /* Next event card */
 .next-event-card.wp-block-media-text {
-	border: 2px solid var(--wp--preset--color--primary);
-	border-radius: 12px;
-	overflow: hidden;
+    border: 2px solid var(--wp--preset--color--primary);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .next-event-card .wp-block-media-text__media img {
-	border-radius: 0;
+    border-radius: 0;
 }
 
 /* Section labels */
 .is-style-section-label {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 /* Next event card: image column fills card height */
 .next-event-image-col {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .next-event-image-col .wp-block-post-featured-image {
-	flex: 1;
-	min-height: 300px;
+    flex: 1;
+    min-height: 300px;
 }
 
 .next-event-image-col .wp-block-post-featured-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Past event cards */
 .past-event-card {
-	border: 1px solid var(--wp--preset--color--primary-muted);
-	border-radius: 12px;
-	overflow: hidden;
-	transition: box-shadow 0.2s ease;
+    border: 1px solid var(--wp--preset--color--primary-muted);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
 }
 
 .past-event-card:hover {
-	box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
+    box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
 }
 
 .past-event-card .wp-block-post-featured-image img,
 .past-event-card .wp-block-image img {
-	border-radius: 0;
+    border-radius: 0;
 }
 
 /* Channel cards */
 .channel-card {
-	border: 1px solid var(--wp--preset--color--primary-muted);
-	border-radius: 12px;
-	transition: box-shadow 0.2s ease;
+    border: 1px solid var(--wp--preset--color--primary-muted);
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease;
 }
 
 .channel-card:hover {
-	box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
+    box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
 }
 
 /* Stat cards */
 .stat-card {
-	border-radius: 12px;
+    border-radius: 12px;
 }
 
 /* Footer */
 .site-footer a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .site-footer a:hover {
-	color: var(--wp--preset--color--base);
+    color: var(--wp--preset--color--base);
 }
 
 /* Hero cover adjustments */
 .hero-section .wp-block-cover__inner-container {
-	max-width: 1000px;
+    max-width: 1000px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 782px) {
-	.next-event-card.wp-block-media-text {
-		border-radius: 8px;
-	}
+    .next-event-card.wp-block-media-text {
+        border-radius: 8px;
+    }
 
-	.next-event-card .wp-block-media-text__content {
-		padding: var(--wp--preset--spacing--60);
-	}
+    .next-event-card .wp-block-media-text__content {
+        padding: var(--wp--preset--spacing--60);
+    }
 }
 
-/* Mobile: reduce section padding (inline styles require !important) */
+/* Mobile: reduce section padding in generic theme sections */
 @media (max-width: 600px) {
-	.wp-block-cover.alignfull,
-	.wp-block-group.alignfull {
-		padding-left: var(--wp--preset--spacing--50) !important;
-		padding-right: var(--wp--preset--spacing--50) !important;
-	}
+    .wp-block-cover.alignfull,
+    .wp-block-group.alignfull {
+        padding-left: var(--wp--preset--spacing--50) !important;
+        padding-right: var(--wp--preset--spacing--50) !important;
+    }
+}
+
+/* -------------------------------------------------------
+   WordPress Granada - Home editorial creativa
+   ------------------------------------------------------- */
+
+.wpgranada-home {
+    background: #ffffff;
+    color: var(--wp--preset--color--contrast);
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------
+   HERO
+   ------------------------------------------------------- */
+
+.wpgranada-hero {
+    position: relative;
+    min-height: 86vh;
+    padding: clamp(4rem, 8vw, 8rem) var(--wp--preset--spacing--80);
+    background:
+        radial-gradient(circle at 85% 20%, rgba(249, 115, 22, 0.16), transparent 24rem),
+        linear-gradient(135deg, #eff2ff 0%, #ffffff 58%, #fff7ed 100%);
+    overflow: hidden;
+}
+
+/* Patrón geométrico suave del hero */
+.wpgranada-hero::before {
+    content: "";
+    position: absolute;
+    right: -8vw;
+    bottom: -10vw;
+    width: 55vw;
+    height: 55vw;
+    opacity: 0.08;
+    background-image:
+        linear-gradient(45deg, rgba(56, 88, 233, 0.45) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(56, 88, 233, 0.45) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(249, 115, 22, 0.35) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(249, 115, 22, 0.35) 75%);
+    background-size: 42px 42px;
+    background-position: 0 0, 0 21px, 21px -21px, -21px 0;
+    transform: rotate(-8deg);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Imagen lineal de la Alhambra colocada en el hueco superior derecho */
+.wpgranada-hero::after {
+    content: "";
+    position: absolute;
+
+    /*
+        La imagen antes salía encima de WORDPRESS.
+        Ahora la subimos al hueco superior derecho del hero.
+    */
+    top: clamp(0.75rem, 2.2vw, 2.25rem);
+    right: clamp(2.5rem, 6vw, 7rem);
+
+    width: clamp(520px, 58vw, 1050px);
+    height: clamp(90px, 12vw, 170px);
+
+    background-image: url("./assets/images/alhambra-line.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+
+    opacity: 0.20;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* El contenido principal queda por encima de fondos decorativos */
+.wpgranada-hero__grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+    gap: clamp(3rem, 6vw, 6rem);
+    align-items: end;
+}
+
+.wpgranada-kicker,
+.wpgranada-section-label {
+    margin: 0 0 1.25rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--wp--preset--color--primary);
+}
+
+.wpgranada-hero-title {
+    margin: 0;
+    max-width: 980px;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(4.8rem, 15vw, 13rem);
+    font-weight: 800;
+    line-height: 0.78;
+    letter-spacing: -0.09em;
+    text-transform: uppercase;
+    color: var(--wp--preset--color--contrast);
+}
+
+.wpgranada-hero-claim {
+    margin: clamp(1.5rem, 3vw, 2.5rem) 0 0;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(2rem, 5vw, 4.8rem);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    color: var(--wp--preset--color--primary);
+}
+
+.wpgranada-hero-text {
+    max-width: 680px;
+    margin: 1.5rem 0 0;
+    font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+    line-height: 1.65;
+    color: var(--wp--preset--color--secondary);
+}
+
+.wpgranada-buttons {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.wpgranada-buttons .wp-block-button__link {
+    border-radius: 999px;
+    padding: 0.95rem 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+
+.wpgranada-buttons .wp-block-button__link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(16, 24, 40, 0.14);
+    opacity: 0.94;
+}
+
+/* -------------------------------------------------------
+   HERO ASIDE
+   ------------------------------------------------------- */
+
+.wpgranada-hero__aside {
+    position: relative;
+    padding: 2rem;
+    border: 1px solid rgba(56, 88, 233, 0.16);
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 32px 80px rgba(16, 24, 40, 0.08);
+    backdrop-filter: blur(14px);
+}
+
+.wpgranada-hero__aside::before {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 8px;
+    margin-bottom: 2rem;
+    border-radius: 999px;
+    background: var(--wp--preset--color--accent);
+}
+
+.wpgranada-aside-number {
+    margin: 0 0 1rem;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--wp--preset--color--accent);
+}
+
+.wpgranada-aside-text {
+    margin: 0;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(1.35rem, 2vw, 2rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    color: var(--wp--preset--color--contrast);
+}
+
+/* Por si queda la clase antigua en algún bloque */
+.wpgranada-aside-note {
+    display: none;
+}
+
+/* -------------------------------------------------------
+   MARQUEE / TEXTO EN MOVIMIENTO
+   ------------------------------------------------------- */
+
+.wpgranada-marquee-section {
+    position: relative;
+    border-top: 1px solid rgba(16, 24, 40, 0.08);
+    border-bottom: 1px solid rgba(16, 24, 40, 0.08);
+    background: var(--wp--preset--color--contrast);
+    overflow: hidden;
+}
+
+.wpgranada-marquee {
+    display: inline-block;
+    width: max-content;
+    min-width: 200%;
+    margin: 0;
+    padding: 1.15rem 0;
+    white-space: nowrap;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(1.1rem, 3vw, 2rem);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--wp--preset--color--base);
+    animation: wpgranada-marquee-continuous 26s linear infinite;
+    will-change: transform;
+}
+
+@keyframes wpgranada-marquee-continuous {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* -------------------------------------------------------
+   MANIFEST
+   ------------------------------------------------------- */
+
+.wpgranada-manifest {
+    padding: clamp(5rem, 9vw, 8rem) var(--wp--preset--spacing--80);
+    background: #ffffff;
+}
+
+.wpgranada-manifest-text {
+    max-width: 980px;
+    margin: 0;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(2.4rem, 6vw, 6.5rem);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.065em;
+    color: var(--wp--preset--color--contrast);
+}
+
+/* Por si queda el párrafo antiguo */
+.wpgranada-manifest-subtext {
+    display: none;
+}
+
+/* -------------------------------------------------------
+   ACTIVITIES
+   ------------------------------------------------------- */
+
+.wpgranada-activities {
+    padding: clamp(5rem, 8vw, 8rem) var(--wp--preset--spacing--80);
+    background: var(--wp--preset--color--background-light);
+}
+
+.wpgranada-section-title {
+    max-width: 900px;
+    margin: 0 0 3rem;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.065em;
+    color: var(--wp--preset--color--contrast);
+}
+
+.wpgranada-activity-list {
+    border-top: 1px solid rgba(16, 24, 40, 0.16);
+}
+
+.wpgranada-activity-row {
+    display: grid;
+    grid-template-columns: 90px minmax(180px, 360px) minmax(0, 1fr);
+    gap: clamp(1.5rem, 4vw, 4rem);
+    align-items: start;
+    padding: clamp(1.75rem, 4vw, 3rem) 0;
+    border-bottom: 1px solid rgba(16, 24, 40, 0.16);
+}
+
+.wpgranada-activity-number {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    color: var(--wp--preset--color--accent);
+}
+
+.wpgranada-activity-title {
+    margin: 0;
+    font-size: clamp(1.7rem, 3.5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    color: var(--wp--preset--color--contrast);
+}
+
+.wpgranada-activity-text {
+    max-width: 640px;
+    margin: 0;
+    font-size: clamp(1rem, 1.3vw, 1.18rem);
+    line-height: 1.7;
+    color: var(--wp--preset--color--secondary);
+}
+
+/* La sección antigua de identidad se oculta por si quedara cacheada */
+.wpgranada-identity {
+    display: none;
+}
+
+/* -------------------------------------------------------
+   NEWS
+   ------------------------------------------------------- */
+
+.wpgranada-news {
+    padding: clamp(5rem, 8vw, 8rem) var(--wp--preset--spacing--80);
+    background: #ffffff;
+}
+
+.wpgranada-news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+/*
+    IMPORTANTE:
+    WordPress Query Loop mete un UL/LI interno.
+    Estas reglas hacen que la tarjeta real y las dos tarjetas manuales
+    arranquen a la misma altura y tengan comportamiento equivalente.
+*/
+.wpgranada-news-grid > .wp-block-query,
+.wpgranada-news-grid > .wp-block-group {
+    align-self: stretch;
+    height: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.wpgranada-query {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.wpgranada-query .wp-block-post-template {
+    display: block !important;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.wpgranada-query .wp-block-post-template > li {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+}
+
+.wpgranada-query .wp-block-post-template > li > .wp-block-group {
+    height: 100%;
+    margin: 0 !important;
+}
+
+.wpgranada-post-template {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.wpgranada-post-card {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    min-height: 290px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 1.5rem;
+    border-radius: 24px;
+    background: var(--wp--preset--color--background-light);
+    overflow: hidden;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.wpgranada-post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 60px rgba(16, 24, 40, 0.1);
+}
+
+.wpgranada-post-date {
+    margin: 0 0 1rem;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--wp--preset--color--muted);
+}
+
+.wpgranada-post-title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    line-height: 1.08;
+    color: var(--wp--preset--color--contrast);
+}
+
+.wpgranada-post-title a {
+    color: var(--wp--preset--color--contrast);
+    text-decoration: none;
+}
+
+.wpgranada-post-title a:hover {
+    color: var(--wp--preset--color--primary);
+}
+
+.wpgranada-post-excerpt {
+    margin-top: 0;
+    color: var(--wp--preset--color--secondary);
+}
+
+.wpgranada-example-card {
+    height: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.wpgranada-example-card::after {
+    content: "Ejemplo";
+    position: absolute;
+    right: 1.25rem;
+    bottom: 1rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(56, 88, 233, 0.22);
+}
+
+/* -------------------------------------------------------
+   FINAL CTA
+   ------------------------------------------------------- */
+
+.wpgranada-final-cta {
+    position: relative;
+    padding: clamp(5rem, 9vw, 9rem) var(--wp--preset--spacing--80);
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.22), transparent 22rem),
+        linear-gradient(135deg, #3858e9 0%, #7a5db9 46%, #f97316 100%);
+    color: var(--wp--preset--color--base);
+    text-align: center;
+}
+
+.wpgranada-final-cta .wpgranada-section-label {
+    color: var(--wp--preset--color--base);
+}
+
+.wpgranada-final-title {
+    max-width: 940px;
+    margin: 0 auto;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(3rem, 7vw, 7rem);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.07em;
+    color: var(--wp--preset--color--base);
+}
+
+.wpgranada-final-text {
+    display: none;
+}
+
+.wpgranada-final-buttons {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------------------------------------------------
+   RESPONSIVE
+   ------------------------------------------------------- */
+
+@media (max-width: 900px) {
+    .wpgranada-hero {
+        min-height: auto;
+    }
+
+    .wpgranada-hero::after {
+        top: 1rem;
+        right: 1rem;
+        width: 72vw;
+        height: 120px;
+        opacity: 0.10;
+    }
+
+    .wpgranada-hero__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wpgranada-hero-title {
+        font-size: clamp(4rem, 22vw, 7rem);
+    }
+
+    .wpgranada-activity-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .wpgranada-activity-number {
+        font-size: 0.85rem;
+    }
+
+    .wpgranada-section-title,
+    .wpgranada-manifest-text,
+    .wpgranada-final-title {
+        letter-spacing: -0.045em;
+    }
+
+    .wpgranada-hero__aside {
+        margin-top: 2rem;
+    }
+
+    .wpgranada-news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wpgranada-post-card {
+        min-height: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wpgranada-hero,
+    .wpgranada-manifest,
+    .wpgranada-activities,
+    .wpgranada-news,
+    .wpgranada-final-cta {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+
+    .wpgranada-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wpgranada-buttons .wp-block-button,
+    .wpgranada-buttons .wp-block-button__link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wpgranada-marquee {
+        font-size: 1rem;
+    }
+
+    .wpgranada-hero-title {
+        letter-spacing: -0.07em;
+    }
+
+    .wpgranada-hero__aside {
+        border-radius: 24px;
+        padding: 1.5rem;
+    }
 }
