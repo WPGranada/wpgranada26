@@ -714,3 +714,28 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
         text-align: center;
     }
 }
+/* Accessibility: improve text contrast */
+.wp-site-blocks,
+.wpgranada-home {
+    color: var(--wp--preset--color--contrast);
+}
+
+.wp-site-blocks p,
+.wp-site-blocks li {
+    color: #1f2937;
+}
+
+.wp-block-site-tagline,
+.wpgranada-hero p {
+    color: #374151;
+}
+
+.is-style-section-label,
+.wpgranada-hero .is-style-section-label {
+    color: #1d4ed8;
+}
+
+.wpgranada-hero strong,
+.wp-site-blocks strong {
+    color: #111827;
+}
