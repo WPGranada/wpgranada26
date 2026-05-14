@@ -1,22 +1,48 @@
-
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: 'Inter', sans-serif;
 }
 
 /* ===== FONDO GLOBAL ===== */
-html, body, .wp-site-blocks {
+html,
+body,
+.wp-site-blocks {
     background: radial-gradient(circle at top, #1e293b, #020617 80%) !important;
 }
 
+/* ===== CONTENEDOR ===== */
+.wp-site-blocks {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    padding: 0 30px;
+}
 
+/* Evitar que imágenes, vídeos e iframes se salgan */
+img,
+video,
+iframe,
+.wp-block-cover,
+.wp-block-image,
+.wp-block-media-text {
+    max-width: 100%;
+}
 
+img {
+    height: auto;
+}
 
+/* ===== LIMPIEZA DE FONDOS ===== */
 .wp-block-group[style],
 .wp-block-group.has-background,
 .wp-block-cover {
@@ -24,16 +50,9 @@ html, body, .wp-site-blocks {
     box-shadow: none !important;
 }
 
-/* BLOQUE PRINCIPAL GRANDE */
 .wp-block-group.alignfull {
     background: transparent !important;
     box-shadow: none !important;
-}
-
-/* ===== CONTENEDOR ===== */
-.wp-site-blocks {
-    max-width: 1200px;
-    margin: auto;
 }
 
 /* ===== SECCIONES ===== */
@@ -41,9 +60,7 @@ html, body, .wp-site-blocks {
     padding: 60px 20px;
 }
 
-
-/*  CAJA PRINCIPAL (BIEN OSCURA) */
-
+/* CAJA PRINCIPAL */
 .wp-block-heading + .wp-block-group {
     background: rgba(15, 23, 42, 0.7) !important;
     border-radius: 16px;
@@ -126,7 +143,6 @@ header {
     padding: 60px 20px;
 }
 
-/* GRID FOOTER */
 .site-footer .wp-block-columns {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
@@ -134,12 +150,10 @@ header {
     align-items: start;
 }
 
-/* COLUMNAS */
 .site-footer .wp-block-column {
     display: flex;
 }
 
-/* TARJETAS FOOTER */
 .site-footer .wp-block-group {
     width: 100%;
     padding: 25px;
@@ -147,44 +161,22 @@ header {
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-/* SIN ALTURAS */
-.site-footer .wp-block-group {
     height: auto !important;
     min-height: auto !important;
 }
 
-/* LINKS FOOTER */
 .site-footer a {
     display: block;
     margin-bottom: 8px;
 }
 
-/* TITULOS FOOTER */
 .site-footer h3,
 .site-footer h4 {
     margin-bottom: 10px;
     color: white;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .site-footer .wp-block-columns {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .site-footer .wp-block-columns {
-        grid-template-columns: 1fr;
-    }
-}
-
-/*  TEXTO BLOQUE EN BLANCO */
-
-
-/* TODO el texto dentro del bloque principal */
+/* TEXTO BLOQUE EN BLANCO */
 .wp-block-heading + .wp-block-group,
 .wp-block-heading + .wp-block-group p,
 .wp-block-heading + .wp-block-group em,
@@ -192,28 +184,21 @@ header {
     color: #ffffff !important;
 }
 
-
 /* ARREGLAR BLOQUE CONECTA */
-
-
-/* QUITAR EL FONDO DEGRADADO */
 .wp-block-columns[style],
 .wp-block-columns.has-background {
     background: transparent !important;
 }
 
-/* QUITAR CUALQUIER COLOR INLINE */
 .wp-block-columns[style*="background"] {
     background: transparent !important;
 }
 
-/* APLICAR MISMO ESTILO QUE EL RESTO */
 .wp-block-columns {
     background: transparent !important;
     padding: 0 !important;
 }
 
-/* TARJETAS DENTRO DEL BLOQUE */
 .wp-block-columns .wp-block-column > .wp-block-group {
     background: rgba(255,255,255,0.04) !important;
     border-radius: 16px;
@@ -223,17 +208,13 @@ header {
     box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
-/* TEXTO EN BLANCO */
 .wp-block-columns h2,
 .wp-block-columns h3,
 .wp-block-columns p {
     color: #e2e8f0 !important;
 }
 
-/*  QUITAR CAJA DEL TITULO "CONECTA..." */
-
-
-/* eliminar fondo y borde del contenedor del título */
+/* QUITAR CAJA DEL TÍTULO */
 .wp-block-group:has(> h2) {
     background: transparent !important;
     border: none !important;
@@ -241,68 +222,57 @@ header {
     padding: 0 !important;
 }
 
-/* ajustar separación del título */
 .wp-block-group:has(> h2) h2 {
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-/* BLOQUE EVENTOS */
-
-
-/* quitar fondo raro del bloque */
+/* ===== BLOQUE EVENTOS ===== */
 .wp-block-query,
 .wp-block-post-template {
     background: transparent !important;
 }
 
-/* contenedor general */
 .wp-block-query {
     padding: 80px 20px;
     margin: 60px 0;
+    padding-top: 10px !important;
 }
 
-/* grid limpio */
+.wp-block-query > h2 {
+    font-size: 56px !important;
+    margin-bottom: 10px !important;
+}
+
+.wp-block-query .wp-block-post-template {
+    margin-top: 0 !important;
+}
+
 .wp-block-post-template {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-
-/*  TARJETAS ESTILO HOME */
-
-
-/* cada noticia */
 .wp-block-post {
     background: rgba(255,255,255,0.04);
     padding: 20px;
     border-radius: 16px;
-
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.08);
-
     box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-
     transition: all 0.3s ease;
 }
 
-/* hover pro */
 .wp-block-post:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 60px rgba(0,0,0,0.7);
 }
 
-
-/*  IMAGENES */
-
 .wp-block-post img {
     border-radius: 12px;
     margin-bottom: 15px;
 }
-
-
-/* TITULOS */
 
 .wp-block-post-title {
     font-size: 22px !important;
@@ -310,59 +280,387 @@ header {
     margin-bottom: 10px;
 }
 
-
-/*  FECHA */
-
 .wp-block-post-date {
     color: #94a3b8;
     font-size: 14px;
 }
 
+/* Caja de datos de reunión */
+.single .wp-block-post-content > div,
+.single .entry-content > div {
+    color: #ffffff !important;
+}
 
-/*  RESPONSIVE */
+.single .wp-block-post-content > div *,
+.single .entry-content > div * {
+    color: #ffffff !important;
+}
 
+/* =====================================================
+   HERO / IMAGEN PRINCIPAL EN MÓVIL
+===================================================== */
+@media (max-width: 600px) {
+
+    .wp-block-cover {
+        min-height: 260px !important;
+        height: 260px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        background-color: #020617 !important;
+    }
+
+    .wp-block-cover img.wp-block-cover__image-background {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        object-position: center center !important;
+    }
+
+    .wp-block-cover__inner-container {
+        padding: 16px 10px !important;
+        width: 100% !important;
+    }
+}
+
+/* =====================================================
+   FORZAR MENÚ NORMAL EN MÓVIL - SIN HAMBURGUESA
+===================================================== */
+@media (max-width: 768px) {
+
+    .wp-block-navigation__responsive-container-open {
+        display: none !important;
+    }
+
+    .wp-block-navigation__responsive-container {
+        display: flex !important;
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        background: transparent !important;
+        padding: 0 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+    }
+
+    .wp-block-navigation__responsive-container-close {
+        display: none !important;
+    }
+
+    .wp-block-navigation__responsive-container-content {
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0 !important;
+    }
+
+    .wp-block-navigation__container {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+
+    .wp-block-navigation-item {
+        width: auto !important;
+        text-align: center !important;
+    }
+
+    .wp-block-navigation-item__content {
+        display: inline-block !important;
+        padding: 8px 10px !important;
+        font-size: 13px !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
+    }
+}
+
+/* =====================================================
+   SOBRE NOSOTROS - HERO RESPONSIVE
+===================================================== */
+@media (max-width: 768px) {
+
+    .sobre-hero {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        padding: 0 !important;
+        margin: 0 auto 30px auto !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .sobre-hero .wp-block-columns {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .sobre-hero .wp-block-column {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .sobre-hero .wp-block-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .sobre-hero .wp-block-image img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        object-fit: contain !important;
+        object-position: center center !important;
+    }
+
+    .sobre-hero .wp-block-cover {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+        height: auto !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .sobre-hero .wp-block-cover img.wp-block-cover__image-background {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        object-position: center center !important;
+    }
+
+    .sobre-hero .wp-block-group {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 22px 18px !important;
+        border-radius: 0 !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        overflow: visible !important;
+    }
+
+    .sobre-hero h1,
+    .sobre-hero h2,
+    .sobre-hero h3 {
+        font-size: 28px !important;
+        line-height: 1.15 !important;
+        margin: 0 0 10px 0 !important;
+        max-width: 100% !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .sobre-hero p {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        overflow-wrap: break-word !important;
+    }
+}
+
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
 @media (max-width: 900px) {
-    .wp-block-post-template {
-        grid-template-columns: 1fr 1fr;
+
+    .wp-site-blocks {
+        padding-left: 20px;
+        padding-right: 20px;
     }
-}
 
-@media (max-width: 600px) {
-    .wp-block-post-template {
-        grid-template-columns: 1fr;
+    .wp-block-group {
+        padding: 40px 20px;
     }
-}
 
+    .wp-block-heading + .wp-block-group {
+        padding: 30px;
+    }
 
-/*  ARREGLAR ESPACIO REAL */
+    .wp-block-post-template {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 24px;
+    }
 
-
-/* título más grande de verdad */
-.wp-block-query > h2 {
-    font-size: 56px !important;
-    margin-bottom: 10px !important; /* 🔥 quita el hueco */
-}
-
-/* grid de posts pegado al título */
-.wp-block-query .wp-block-post-template {
-    margin-top: 0 !important; /* 🔥 elimina separación */
-}
-
-/* contenedor entero menos aire */
-.wp-block-query {
-    padding-top: 10px !important; /* 🔥 quita espacio superior */
-}
-/* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
     .site-footer .wp-block-columns {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 24px;
+    }
+
+    .wp-site-blocks h1 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .wp-site-blocks h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .wp-block-query > h2 {
+        font-size: 40px !important;
     }
 }
 
+/* =====================================================
+   RESPONSIVE MÓVIL
+===================================================== */
+@media (max-width: 600px) {
 
-.wp-site-blocks {
-    max-width: 1400px;
-    width: 100%;
-    margin: auto;
-    padding: 0 30px;
+    .wp-site-blocks {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .wp-block-group {
+        padding: 28px 14px;
+    }
+
+    .wp-block-group:not(.alignfull) {
+        padding: 22px;
+        margin-bottom: 22px;
+        border-radius: 14px;
+    }
+
+    .wp-block-heading + .wp-block-group {
+        padding: 24px;
+        border-radius: 14px;
+    }
+
+    .wp-block-query {
+        padding: 30px 0 !important;
+        margin: 30px 0;
+    }
+
+    .wp-block-post-template {
+        grid-template-columns: 1fr !important;
+        gap: 22px;
+    }
+
+    .wp-block-post {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .wp-block-post-title {
+        font-size: 20px !important;
+        line-height: 1.25;
+    }
+
+    .wp-block-post-date {
+        font-size: 13px;
+    }
+
+    .site-footer {
+        padding: 40px 14px;
+    }
+
+    .site-footer .wp-block-columns {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .site-footer .wp-block-group {
+        padding: 22px;
+    }
+
+    .wp-site-blocks h1 {
+        font-size: 32px;
+        line-height: 1.15;
+    }
+
+    .wp-site-blocks h2 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .wp-site-blocks h3 {
+        font-size: 21px;
+        line-height: 1.25;
+    }
+
+    .wp-site-blocks p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .wp-block-query > h2 {
+        font-size: 32px !important;
+        line-height: 1.15;
+        margin-bottom: 20px !important;
+    }
+
+    .wp-block-button__link,
+    button,
+    input[type="submit"] {
+        min-height: 44px;
+        padding: 12px 18px;
+        font-size: 16px;
+        width: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .wp-block-group:not(.alignfull):hover,
+    .wp-block-post:hover,
+    .wp-block-button__link:hover {
+        transform: none;
+    }
+}
+
+/* =====================================================
+   MÓVIL PEQUEÑO
+===================================================== */
+@media (max-width: 380px) {
+
+    .wp-site-blocks {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .wp-block-group:not(.alignfull),
+    .wp-block-heading + .wp-block-group,
+    .wp-block-post,
+    .site-footer .wp-block-group {
+        padding: 18px;
+    }
+
+    .wp-site-blocks h1 {
+        font-size: 28px;
+    }
+
+    .wp-site-blocks h2 {
+        font-size: 24px;
+    }
+
+    .wp-block-query > h2 {
+        font-size: 28px !important;
+    }
+
+    .wp-block-post-title {
+        font-size: 18px !important;
+    }
+}
+/* FORZAR BORDE BLANCO EN TODOS LOS BOTONES */
+.wp-block-button__link {
+    border: 2px solid #ffffff !important;
 }
