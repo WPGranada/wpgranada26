@@ -1108,3 +1108,100 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
         word-break: normal !important;
     }
 }
+/* -------------------------------------------------------
+   Plantilla 404 - Página no encontrada
+------------------------------------------------------- */
+
+.wpgranada-404-main {
+    text-align: center;
+}
+
+.wpgranada-404-hero {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wpgranada-404-text {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.wpgranada-404-search,
+.wpgranada-404-links,
+.wpgranada-404-cta {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    border-radius: 24px;
+}
+
+.wpgranada-404-search,
+.wpgranada-404-links {
+    background: rgba(253, 128, 46, 0.08);
+}
+
+.wpgranada-404-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.wpgranada-404-list li {
+    margin: 0;
+}
+
+.wpgranada-404-list a {
+    display: inline-block;
+    padding: 0.8rem 1.1rem;
+    border-radius: 999px;
+    background: #ffffff;
+    color: var(--wp--preset--color--contrast, #111827);
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.wpgranada-404-list a:hover {
+    color: var(--wp--preset--color--accent, #fd802e);
+}
+
+.wpgranada-404-cta {
+    background: var(--wp--preset--color--contrast, #111827);
+    color: #ffffff;
+}
+
+.wpgranada-404-cta h2,
+.wpgranada-404-cta p {
+    color: #ffffff;
+}
+
+.wpgranada-404-cta .is-style-outline .wp-block-button__link {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .wpgranada-404-search,
+    .wpgranada-404-links,
+    .wpgranada-404-cta {
+        padding: 1.5rem;
+    }
+
+    .wpgranada-404-list {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wpgranada-404-list a {
+        display: block;
+    }
+}
