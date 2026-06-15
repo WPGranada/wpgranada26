@@ -102,7 +102,8 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
 }
 
 .wpgranada-nav-menu a {
-    font-weight: 600;
+    font-family: var(--wp--preset--font-family--body);
+    font-weight: 500;
     font-size: 1rem;
     color: var(--wp--preset--color--contrast);
     text-decoration: none;
