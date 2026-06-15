@@ -9,12 +9,20 @@ defined( 'ABSPATH' ) || exit;
 
 add_action( 'init', 'wpgranada26_register_pattern_categories', 1 );
 /**
- * Register custom pattern categories.
+ * Register custom pattern categories and block styles.
  *
  * @return void
  */
 function wpgranada26_register_pattern_categories() {
 	register_block_pattern_category( 'wpgranada', array( 'label' => __( 'WPGranada', 'wpgranada26' ) ) );
+
+	register_block_style(
+		'core/paragraph',
+		array(
+			'name'  => 'textos-secundarios',
+			'label' => __( 'Textos secundarios', 'wpgranada26' ),
+		)
+	);
 }
 
 add_filter( 'query_loop_block_query_vars', 'wpgranada26_upcoming_meetings_query', 10, 2 );
