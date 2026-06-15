@@ -3,55 +3,42 @@
  * Title: Marquee de texto
  * Slug: wpgranada26/marquee-texto
  * Categories: wpgranada
- * Description: Banda de texto infinito con palabras clave de la comunidad.
+ * Description: Banda de texto infinito. Edita cada párrafo para cambiar las palabras.
  * Keywords: marquee, texto, banda, animación
  */
-
-$item = 'OPEN WEB <span class="wpgranada-marquee-dot">•</span> WORDPRESS <span class="wpgranada-marquee-dot">•</span> GRANADA <span class="wpgranada-marquee-dot">•</span> DISEÑO <span class="wpgranada-marquee-dot">•</span> CÓDIGO <span class="wpgranada-marquee-dot">•</span> COMUNIDAD <span class="wpgranada-marquee-dot">•</span> ';
-$copy = str_repeat( $item, 2 );
 ?>
 <!-- wp:group {"align":"full","className":"wpgranada-marquee-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull wpgranada-marquee-section">
 
-    <!-- wp:html -->
-    <div class="wpgranada-marquee">
-        <span class="wpgranada-marquee-content"><?php echo $copy; ?></span>
-        <span class="wpgranada-marquee-content" aria-hidden="true"><?php echo $copy; ?></span>
+    <!-- wp:group {"className":"wpgranada-marquee-items","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","alignItems":"center"}} -->
+    <div class="wp-block-group wpgranada-marquee-items">
+
+        <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--heading)","fontWeight":"800","letterSpacing":"0.08em","textTransform":"uppercase","fontSize":"clamp(1.1rem, 3vw, 2rem)"},"color":{"text":"var(--wp--preset--color--base)"}}} -->
+        <p class="has-text-color" style="color:var(--wp--preset--color--base);font-family:var(--wp--preset--font-family--heading);font-size:clamp(1.1rem, 3vw, 2rem);font-weight:800;letter-spacing:0.08em;text-transform:uppercase">OPEN WEB</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--heading)","fontWeight":"800","letterSpacing":"0.08em","textTransform":"uppercase","fontSize":"clamp(1.1rem, 3vw, 2rem)"},"color":{"text":"var(--wp--preset--color--base)"}}} -->
+        <p class="has-text-color" style="color:var(--wp--preset--color--base);font-family:var(--wp--preset--font-family--heading);font-size:clamp(1.1rem, 3vw, 2rem);font-weight:800;letter-spacing:0.08em;text-transform:uppercase">WORDPRESS</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--heading)","fontWeight":"800","letterSpacing":"0.08em","textTransform":"uppercase","fontSize":"clamp(1.1rem, 3vw, 2rem)"},"color":{"text":"var(--wp--preset--color--base)"}}} -->
+        <p class="has-text-color" style="color:var(--wp--preset--color--base);font-family:var(--wp--preset--font-family--heading);font-size:clamp(1.1rem, 3vw, 2rem);font-weight:800;letter-spacing:0.08em;text-transform:uppercase">GRANADA</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--heading)","fontWeight":"800","letterSpacing":"0.08em","textTransform":"uppercase","fontSize":"clamp(1.1rem, 3vw, 2rem)"},"color":{"text":"var(--wp--preset--color--base)"}}} -->
+        <p class="has-text-color" style="color:var(--wp--preset--color--base);font-family:var(--wp--preset--font-family--heading);font-size:clamp(1.1rem, 3vw, 2rem);font-weight:800;letter-spacing:0.08em;text-transform:uppercase">DISEÑO</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--heading)","fontWeight":"800","letterSpacing":"0.08em","textTransform":"uppercase","fontSize":"clamp(1.1rem, 3vw, 2rem)"},"color":{"text":"var(--wp--preset--color--base)"}}} -->
+        <p class="has-text-color" style="color:var(--wp--preset--color--base);font-family:var(--wp--preset--font-family--heading);font-size:clamp(1.1rem, 3vw, 2rem);font-weight:800;letter-spacing:0.08em;text-transform:uppercase">CÓDIGO</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--heading)","fontWeight":"800","letterSpacing":"0.08em","textTransform":"uppercase","fontSize":"clamp(1.1rem, 3vw, 2rem)"},"color":{"text":"var(--wp--preset--color--base)"}}} -->
+        <p class="has-text-color" style="color:var(--wp--preset--color--base);font-family:var(--wp--preset--font-family--heading);font-size:clamp(1.1rem, 3vw, 2rem);font-weight:800;letter-spacing:0.08em;text-transform:uppercase">COMUNIDAD</p>
+        <!-- /wp:paragraph -->
+
     </div>
-    <script>
-    (function () {
-        function startMarquee() {
-            var track = document.querySelector('.wpgranada-marquee');
-            if (!track) return;
-            var copy = track.querySelector('.wpgranada-marquee-content');
-            if (!copy) return;
-
-            var copyWidth = copy.offsetWidth;
-            var pos = 0;
-            var lastTime = null;
-            var pxPerMs = 80 / 1000; /* 80px por segundo */
-
-            function tick(timestamp) {
-                if (lastTime === null) lastTime = timestamp;
-                var delta = timestamp - lastTime;
-                lastTime = timestamp;
-                pos -= pxPerMs * delta;
-                if (pos <= -copyWidth) pos += copyWidth;
-                track.style.transform = 'translateX(' + pos + 'px)';
-                requestAnimationFrame(tick);
-            }
-
-            requestAnimationFrame(tick);
-        }
-
-        if (document.readyState === 'complete') {
-            startMarquee();
-        } else {
-            window.addEventListener('load', startMarquee);
-        }
-    })();
-    </script>
-    <!-- /wp:html -->
+    <!-- /wp:group -->
 
 </div>
 <!-- /wp:group -->

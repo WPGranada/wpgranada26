@@ -105,7 +105,7 @@ function wpgranada26_nav_shortcode() {
 
 add_action( 'wp_enqueue_scripts', 'wpgranada26_enqueue_styles' );
 /**
- * Enqueue theme stylesheet.
+ * Enqueue theme stylesheet and scripts.
  *
  * @return void
  */
@@ -115,5 +115,13 @@ function wpgranada26_enqueue_styles() {
 		get_stylesheet_uri(),
 		array(),
 		wp_get_theme()->get( 'Version' )
+	);
+
+	wp_enqueue_script(
+		'wpgranada26-marquee',
+		get_template_directory_uri() . '/assets/js/marquee.js',
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
 	);
 }

@@ -351,6 +351,11 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
    MARQUEE / TEXTO EN MOVIMIENTO
    ------------------------------------------------------- */
 
+.wpgranada-marquee-items {
+    padding: 1.15rem var(--wp--preset--spacing--80);
+    gap: 0.5rem 2rem;
+}
+
 .wpgranada-marquee-section {
     position: relative;
     border-top: 1px solid rgba(16, 24, 40, 0.08);
