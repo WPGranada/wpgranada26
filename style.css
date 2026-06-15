@@ -346,23 +346,30 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
     border-bottom: 1px solid rgba(16, 24, 40, 0.08);
     background: var(--wp--preset--color--contrast);
     overflow: hidden;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
 
 .wpgranada-marquee {
-    display: inline-block;
+    display: flex;
     width: max-content;
-    min-width: 200%;
     margin: 0;
-    padding: 1.15rem 0;
+    padding: 0;
+    will-change: transform;
+}
+
+.wpgranada-marquee-content {
+    display: inline-flex;
+    align-items: center;
     white-space: nowrap;
+    padding: 1.15rem 0;
     font-family: var(--wp--preset--font-family--heading);
     font-size: clamp(1.1rem, 3vw, 2rem);
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--wp--preset--color--base);
-    animation: wpgranada-marquee-continuous 26s linear infinite;
-    will-change: transform;
 }
 
 @keyframes wpgranada-marquee-continuous {
@@ -371,8 +378,13 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(calc(-1 * var(--marquee-copy-width, 50%)));
     }
+}
+
+.wpgranada-marquee-dot {
+    color: var(--wp--preset--color--accent);
+    margin: 0 0.6em;
 }
 
 /* -------------------------------------------------------
