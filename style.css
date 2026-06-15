@@ -85,6 +85,33 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
     border-radius: 12px;
 }
 
+/* Classic nav menu via shortcode */
+.wpgranada-nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wpgranada-nav-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.wpgranada-nav-menu a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--wp--preset--color--contrast);
+    text-decoration: none;
+}
+
+.wpgranada-nav-menu a:hover {
+    color: var(--wp--preset--color--primary);
+}
+
 /* Footer */
 .site-footer a {
     text-decoration: none;
