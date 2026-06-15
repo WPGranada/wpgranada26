@@ -85,6 +85,13 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
     border-radius: 12px;
 }
 
+/* Imagen inclinada con sombra — patrón manifiesto comunidad */
+.wpgranada-img-tilted img {
+    transform: rotate(2deg);
+    box-shadow: 0 24px 60px rgba(16, 24, 40, 0.22);
+    display: block;
+}
+
 /* Block style: Textos secundarios */
 .wp-block-paragraph.is-style-textos-secundarios {
     font-family: var(--wp--preset--font-family--body);

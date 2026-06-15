@@ -17,7 +17,7 @@
         <p class="is-style-textos-secundarios">¿Qué es WordPress Granada?</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:heading {"level":2} -->
+        <!-- wp:heading -->
         <h2 class="wp-block-heading">Una comunidad local para aprender y compartir experiencias reales en WordPress</h2>
         <!-- /wp:heading -->
 
@@ -28,7 +28,7 @@
     <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
 
         <!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"20px"}}} -->
-        <figure class="wp-block-image size-full" style="border-radius:20px"><img src="" alt="" style="border-radius:20px"/></figure>
+        <figure class="wp-block-image size-full has-custom-border wpgranada-img-tilted"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/comunidad-local.webp" alt="Comunidad WordPress Granada" style="border-radius:20px"/></figure>
         <!-- /wp:image -->
 
     </div>
