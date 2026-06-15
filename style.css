@@ -755,3 +755,20 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
         padding: 1.5rem;
     }
 }
+
+/* Full-bleed: rompe el contenedor y ocupa 100vw */
+.wpgranada-full-bleed {
+	 padding-bottom: 100px;
+    padding-top: 50px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+/* Actividades — separadores de fila */
+.wpgranada-row-sep {
+    border: none;
+    border-top: 1px solid #D0D5DD;
+    margin: 0;
+    height: 0;
+}

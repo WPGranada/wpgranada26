@@ -82,6 +82,16 @@
         "color": "#667085",
         "name": "Texto suave",
         "slug": "muted"
+    },
+    {
+        "color": "#F5F7FA",
+        "name": "Fondo secundario claro",
+        "slug": "secondary-light"
+    },
+    {
+        "color": "#F97315",
+        "name": "Naranja terciario",
+        "slug": "tertiary"
     }
 ]
 		},
