@@ -1326,3 +1326,703 @@ a:hover {
         text-align: center;
     }
 }
+/* ==========================================================
+   Página Eventos - corrección final visual
+   Page ID: 9
+   ========================================================== */
+
+/* Evita checks/ticks en header, navegación y footer */
+body.page-id-9 .wp-block-navigation li::before,
+body.page-id-9 footer li::before,
+body.page-id-9 .site-footer li::before,
+body.page-id-9 .wp-block-template-part li::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Fondo general */
+body.page-id-9 {
+    background: #f7f9fc;
+}
+
+/* Fondo del main */
+body.page-id-9 main {
+    background:
+        radial-gradient(circle at 12% 5%, rgba(56, 88, 233, 0.07), transparent 22rem),
+        radial-gradient(circle at 90% 8%, rgba(249, 115, 22, 0.08), transparent 22rem),
+        linear-gradient(180deg, #ffffff 0%, #f7f9fc 50%, #ffffff 100%);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Contenedor principal */
+body.page-id-9 .wp-block-post-content,
+body.page-id-9 .entry-content {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px 24px;
+}
+
+/* Título principal Eventos */
+body.page-id-9 .wp-block-post-title,
+body.page-id-9 h1 {
+    max-width: 1120px;
+    margin: 0 auto 16px;
+    padding: 18px 24px 0;
+    text-align: center;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    color: var(--wp--preset--color--contrast);
+}
+
+/* Línea decorativa debajo del título principal */
+body.page-id-9 .wp-block-post-title::after,
+body.page-id-9 h1::after {
+    content: "";
+    display: block;
+    width: 82px;
+    height: 6px;
+    margin: 18px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        var(--wp--preset--color--primary),
+        var(--wp--preset--color--accent)
+    );
+}
+
+/* Párrafo inicial */
+body.page-id-9 .wp-block-post-content > p:first-of-type,
+body.page-id-9 .entry-content > p:first-of-type {
+    max-width: 860px;
+    margin: 0 auto 42px;
+    padding: 24px 32px;
+    text-align: center;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    color: var(--wp--preset--color--secondary);
+    background: #ffffff;
+    border: 1px solid rgba(56, 88, 233, 0.14);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(16, 24, 40, 0.06);
+}
+
+/* Títulos centrados */
+body.page-id-9 h2 {
+    max-width: 1120px;
+    margin: 46px auto 20px;
+    text-align: center;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    color: var(--wp--preset--color--contrast);
+}
+
+/* Texto general */
+body.page-id-9 p {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--wp--preset--color--secondary);
+}
+
+/* Párrafos justo después de títulos */
+body.page-id-9 h2 + p {
+    text-align: center;
+}
+
+/* ==========================================================
+   Qué puedes encontrar
+   ========================================================== */
+
+body.page-id-9 ul {
+    max-width: 920px;
+    margin: 24px auto 54px;
+    padding: 30px 40px;
+    background: #ffffff;
+    border: 1px solid rgba(56, 88, 233, 0.14);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(16, 24, 40, 0.06);
+    list-style: none;
+}
+
+/* Solo checks dentro del contenido */
+body.page-id-9 .wp-block-post-content ul li,
+body.page-id-9 .entry-content ul li {
+    position: relative;
+    margin-bottom: 14px;
+    padding-left: 30px;
+    font-size: 1.03rem;
+    line-height: 1.65;
+    color: var(--wp--preset--color--secondary);
+}
+
+body.page-id-9 .wp-block-post-content ul li::before,
+body.page-id-9 .entry-content ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 900;
+    color: var(--wp--preset--color--accent);
+}
+
+body.page-id-9 .wp-block-post-content ul li:last-child,
+body.page-id-9 .entry-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================
+   Próximos eventos como tarjetas horizontales
+   ========================================================== */
+
+/* Inicio de tarjeta */
+body.page-id-9 .wp-block-post-content p:has(strong),
+body.page-id-9 .entry-content p:has(strong) {
+    max-width: 980px;
+    margin: 30px auto 0;
+    padding: 30px 260px 8px 34px;
+    background: #ffffff;
+    border: 1px solid rgba(56, 88, 233, 0.16);
+    border-bottom: 0;
+    border-radius: 26px 26px 0 0;
+    box-shadow: 0 22px 55px rgba(16, 24, 40, 0.07);
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Barra superior de cada tarjeta */
+body.page-id-9 .wp-block-post-content p:has(strong)::before,
+body.page-id-9 .entry-content p:has(strong)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 34px;
+    right: 34px;
+    height: 5px;
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        var(--wp--preset--color--primary),
+        var(--wp--preset--color--accent)
+    );
+}
+
+/* Nombre del evento */
+body.page-id-9 .wp-block-post-content p:has(strong) strong,
+body.page-id-9 .entry-content p:has(strong) strong {
+    display: block;
+    padding-top: 10px;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(1.25rem, 2vw, 1.55rem);
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+    color: var(--wp--preset--color--contrast);
+}
+
+/* Fecha */
+body.page-id-9 .wp-block-post-content p:has(strong) + p,
+body.page-id-9 .entry-content p:has(strong) + p {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 8px 260px 8px 34px;
+    background: #ffffff;
+    border-left: 1px solid rgba(56, 88, 233, 0.16);
+    border-right: 1px solid rgba(56, 88, 233, 0.16);
+    color: var(--wp--preset--color--muted);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Descripción */
+body.page-id-9 .wp-block-post-content p:has(strong) + p + p,
+body.page-id-9 .entry-content p:has(strong) + p + p {
+    max-width: 980px;
+    min-height: 86px;
+    margin: 0 auto;
+    padding: 8px 260px 28px 34px;
+    background: #ffffff;
+    border-left: 1px solid rgba(56, 88, 233, 0.16);
+    border-right: 1px solid rgba(56, 88, 233, 0.16);
+    color: var(--wp--preset--color--secondary);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Botón alineado a la derecha dentro de la tarjeta */
+body.page-id-9 .wp-block-post-content p:has(strong) + p + p + .wp-block-buttons,
+body.page-id-9 .entry-content p:has(strong) + p + p + .wp-block-buttons {
+    max-width: 980px;
+    min-height: 0;
+    margin: -88px auto 34px;
+    padding: 0 34px 34px;
+    background: transparent;
+    border: 1px solid rgba(56, 88, 233, 0.16);
+    border-top: 0;
+    border-radius: 0 0 26px 26px;
+    box-shadow: 0 22px 55px rgba(16, 24, 40, 0.07);
+    justify-content: flex-end;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+/* Permite clicar el botón aunque el contenedor tenga pointer-events none */
+body.page-id-9 .wp-block-post-content p:has(strong) + p + p + .wp-block-buttons .wp-block-button,
+body.page-id-9 .entry-content p:has(strong) + p + p + .wp-block-buttons .wp-block-button {
+    pointer-events: auto;
+}
+
+/* Botones */
+body.page-id-9 .wp-block-button__link,
+body.page-id-9 .wp-element-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.88rem 1.45rem;
+    font-weight: 800;
+    text-decoration: none;
+    background: var(--wp--preset--color--primary);
+    color: #ffffff;
+    box-shadow: 0 14px 32px rgba(16, 24, 40, 0.13);
+    transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+
+body.page-id-9 .wp-block-button__link:hover,
+body.page-id-9 .wp-element-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 44px rgba(16, 24, 40, 0.17);
+    opacity: 0.94;
+}
+
+body.page-id-9 .wp-block-buttons {
+    gap: 1rem;
+}
+
+/* ==========================================================
+   Eventos pasados
+   ========================================================== */
+
+body.page-id-9 h2:nth-of-type(3) {
+    margin-top: 58px;
+}
+
+body.page-id-9 h2:nth-of-type(3) + p {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+/* ==========================================================
+   Propón una actividad - sin bloques superpuestos
+   ========================================================== */
+
+/* Se elimina por completo la estructura de caja partida */
+body.page-id-9 h2:last-of-type {
+    max-width: 980px;
+    margin: 42px auto 18px;
+    padding: 0;
+    text-align: center;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Texto del CTA */
+body.page-id-9 h2:last-of-type + p {
+    max-width: 780px;
+    margin: 0 auto 24px;
+    padding: 0;
+    text-align: center;
+    background: transparent;
+    border: 0;
+}
+
+/* Botones del CTA */
+body.page-id-9 h2:last-of-type + p + .wp-block-buttons {
+    max-width: 980px;
+    margin: 0 auto 34px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    justify-content: center;
+}
+
+/* Contenedor visual real usando sombra suave alrededor de la zona CTA */
+body.page-id-9 h2:last-of-type,
+body.page-id-9 h2:last-of-type + p,
+body.page-id-9 h2:last-of-type + p + .wp-block-buttons {
+    position: relative;
+}
+
+/* Menos hueco antes del footer */
+body.page-id-9 .wp-block-post-content,
+body.page-id-9 .entry-content {
+    padding-bottom: 10px;
+}
+
+/* ==========================================================
+   Footer limpio: sin ticks ni marcas extra
+   ========================================================== */
+
+body.page-id-9 footer ul,
+body.page-id-9 footer li,
+body.page-id-9 .site-footer ul,
+body.page-id-9 .site-footer li,
+body.page-id-9 .wp-block-template-part:last-child ul,
+body.page-id-9 .wp-block-template-part:last-child li {
+    list-style: none !important;
+}
+
+body.page-id-9 footer li::before,
+body.page-id-9 .site-footer li::before,
+body.page-id-9 .wp-block-template-part:last-child li::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* ==========================================================
+   Responsive
+   ========================================================== */
+
+@media (max-width: 768px) {
+    body.page-id-9 .wp-block-post-title,
+    body.page-id-9 h1 {
+        padding-top: 22px;
+        font-size: clamp(2.4rem, 12vw, 3.4rem);
+    }
+
+    body.page-id-9 .wp-block-post-content,
+    body.page-id-9 .entry-content {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    body.page-id-9 .wp-block-post-content > p:first-of-type,
+    body.page-id-9 .entry-content > p:first-of-type {
+        text-align: left;
+        padding: 24px;
+        margin-bottom: 36px;
+    }
+
+    body.page-id-9 h2 {
+        margin-top: 38px;
+        font-size: clamp(2rem, 10vw, 2.8rem);
+        letter-spacing: -0.04em;
+    }
+
+    body.page-id-9 ul {
+        padding: 28px 24px;
+        border-radius: 22px;
+    }
+
+    body.page-id-9 .wp-block-post-content p:has(strong),
+    body.page-id-9 .entry-content p:has(strong),
+    body.page-id-9 .wp-block-post-content p:has(strong) + p,
+    body.page-id-9 .entry-content p:has(strong) + p,
+    body.page-id-9 .wp-block-post-content p:has(strong) + p + p,
+    body.page-id-9 .entry-content p:has(strong) + p + p {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    body.page-id-9 .wp-block-post-content p:has(strong)::before,
+    body.page-id-9 .entry-content p:has(strong)::before {
+        left: 24px;
+        right: 24px;
+    }
+
+    /* En móvil las tarjetas vuelven a vertical para evitar cortes */
+    body.page-id-9 .wp-block-post-content p:has(strong) + p + p,
+    body.page-id-9 .entry-content p:has(strong) + p + p {
+        padding-bottom: 24px;
+        min-height: auto;
+    }
+
+    body.page-id-9 .wp-block-post-content p:has(strong) + p + p + .wp-block-buttons,
+    body.page-id-9 .entry-content p:has(strong) + p + p + .wp-block-buttons {
+        margin: 0 auto 30px;
+        padding: 0 24px 28px;
+        background: #ffffff;
+        justify-content: flex-start;
+        pointer-events: auto;
+    }
+
+    body.page-id-9 .wp-block-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    body.page-id-9 .wp-block-button,
+    body.page-id-9 .wp-block-button__link,
+    body.page-id-9 .wp-element-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* ==========================================================
+   Páginas internas - Sobre nosotros, Ser Ponente y Contacto
+   Estilo coherente con la portada WPGranada
+   Excluye Inicio y Eventos
+   ========================================================== */
+
+/* Fondo general para páginas internas */
+body.page:not(.home):not(.page-id-9) {
+    background: #ffffff;
+}
+
+/* Fondo suave del contenido principal */
+body.page:not(.home):not(.page-id-9) main {
+    background:
+        radial-gradient(circle at 12% 6%, rgba(56, 88, 233, 0.07), transparent 22rem),
+        radial-gradient(circle at 88% 10%, rgba(249, 115, 22, 0.08), transparent 22rem),
+        linear-gradient(180deg, #ffffff 0%, #f7f9fc 52%, #ffffff 100%);
+    padding-bottom: 0;
+}
+
+/* Contenedor general */
+body.page:not(.home):not(.page-id-9) .wp-block-post-content,
+body.page:not(.home):not(.page-id-9) .entry-content {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px 42px;
+}
+
+/* Título principal de la página */
+body.page:not(.home):not(.page-id-9) .wp-block-post-title,
+body.page:not(.home):not(.page-id-9) h1 {
+    max-width: 1080px;
+    margin: 0 auto 20px;
+    padding: 42px 24px 0;
+    text-align: center;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(3rem, 6vw, 5.2rem);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    color: var(--wp--preset--color--contrast);
+}
+
+/* Línea decorativa bajo el título */
+body.page:not(.home):not(.page-id-9) .wp-block-post-title::after,
+body.page:not(.home):not(.page-id-9) h1::after {
+    content: "";
+    display: block;
+    width: 82px;
+    height: 6px;
+    margin: 18px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        var(--wp--preset--color--primary),
+        var(--wp--preset--color--accent)
+    );
+}
+
+/* Primer bloque de contenido como intro */
+body.page:not(.home):not(.page-id-9) .wp-block-post-content > h2:first-of-type,
+body.page:not(.home):not(.page-id-9) .entry-content > h2:first-of-type {
+    margin-top: 46px;
+}
+
+/* Títulos de sección */
+body.page:not(.home):not(.page-id-9) h2 {
+    max-width: 960px;
+    margin: 56px auto 18px;
+    text-align: center;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(2.1rem, 4.4vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: var(--wp--preset--color--contrast);
+}
+
+/* Párrafos generales */
+body.page:not(.home):not(.page-id-9) p {
+    max-width: 860px;
+    margin: 0 auto 24px;
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--wp--preset--color--secondary);
+}
+
+/* Cada párrafo que va después de un h2 se ve como bloque limpio */
+body.page:not(.home):not(.page-id-9) h2 + p {
+    padding: 26px 34px;
+    background: #ffffff;
+    border: 1px solid rgba(56, 88, 233, 0.14);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(16, 24, 40, 0.06);
+}
+
+/* Listas internas, como en Contacto o Ser Ponente */
+body.page:not(.home):not(.page-id-9) .wp-block-post-content ul,
+body.page:not(.home):not(.page-id-9) .entry-content ul {
+    max-width: 860px;
+    margin: 26px auto 46px;
+    padding: 30px 40px;
+    background: #ffffff;
+    border: 1px solid rgba(56, 88, 233, 0.14);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(16, 24, 40, 0.06);
+    list-style: none;
+}
+
+/* Elementos de lista solo dentro del contenido */
+body.page:not(.home):not(.page-id-9) .wp-block-post-content ul li,
+body.page:not(.home):not(.page-id-9) .entry-content ul li {
+    position: relative;
+    margin-bottom: 14px;
+    padding-left: 30px;
+    font-size: 1.03rem;
+    line-height: 1.65;
+    color: var(--wp--preset--color--secondary);
+}
+
+/* Checks solo en listas del contenido, no en menú ni footer */
+body.page:not(.home):not(.page-id-9) .wp-block-post-content ul li::before,
+body.page:not(.home):not(.page-id-9) .entry-content ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 900;
+    color: var(--wp--preset--color--accent);
+}
+
+body.page:not(.home):not(.page-id-9) .wp-block-post-content ul li:last-child,
+body.page:not(.home):not(.page-id-9) .entry-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Botoneras centradas */
+body.page:not(.home):not(.page-id-9) .wp-block-buttons {
+    max-width: 860px;
+    margin: 30px auto 56px;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Botones con estilo de la Home */
+body.page:not(.home):not(.page-id-9) .wp-block-button__link,
+body.page:not(.home):not(.page-id-9) .wp-element-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.9rem 1.55rem;
+    font-weight: 800;
+    text-decoration: none;
+    background: var(--wp--preset--color--primary);
+    color: #ffffff;
+    box-shadow: 0 16px 36px rgba(16, 24, 40, 0.14);
+    transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+
+body.page:not(.home):not(.page-id-9) .wp-block-button__link:hover,
+body.page:not(.home):not(.page-id-9) .wp-element-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 22px 48px rgba(16, 24, 40, 0.18);
+    opacity: 0.94;
+}
+
+/* Reduce hueco antes del footer */
+body.page:not(.home):not(.page-id-9) .wp-block-post-content,
+body.page:not(.home):not(.page-id-9) .entry-content {
+    padding-bottom: 18px;
+}
+
+/* Evitar ticks o estilos extra en header/footer */
+body.page:not(.home):not(.page-id-9) .wp-block-navigation li::before,
+body.page:not(.home):not(.page-id-9) footer li::before,
+body.page:not(.home):not(.page-id-9) .site-footer li::before,
+body.page:not(.home):not(.page-id-9) .wp-block-template-part li::before {
+    content: none !important;
+    display: none !important;
+}
+
+body.page:not(.home):not(.page-id-9) footer ul,
+body.page:not(.home):not(.page-id-9) footer li,
+body.page:not(.home):not(.page-id-9) .site-footer ul,
+body.page:not(.home):not(.page-id-9) .site-footer li,
+body.page:not(.home):not(.page-id-9) .wp-block-template-part:last-child ul,
+body.page:not(.home):not(.page-id-9) .wp-block-template-part:last-child li {
+    list-style: none !important;
+}
+
+/* ==========================================================
+   Ajustes específicos para Contacto
+   ========================================================== */
+
+/* La sección final de Contacto con botones queda más destacada */
+body.page:not(.home):not(.page-id-9) h2:last-of-type + p + .wp-block-buttons {
+    padding: 32px 34px;
+    background: #ffffff;
+    border: 1px solid rgba(56, 88, 233, 0.14);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(16, 24, 40, 0.06);
+}
+
+/* ==========================================================
+   Responsive páginas internas
+   ========================================================== */
+
+@media (max-width: 768px) {
+    body.page:not(.home):not(.page-id-9) .wp-block-post-title,
+    body.page:not(.home):not(.page-id-9) h1 {
+        padding-top: 28px;
+        font-size: clamp(2.4rem, 12vw, 3.4rem);
+    }
+
+    body.page:not(.home):not(.page-id-9) .wp-block-post-content,
+    body.page:not(.home):not(.page-id-9) .entry-content {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    body.page:not(.home):not(.page-id-9) h2 {
+        margin-top: 42px;
+        font-size: clamp(2rem, 10vw, 2.8rem);
+        letter-spacing: -0.04em;
+    }
+
+    body.page:not(.home):not(.page-id-9) h2 + p,
+    body.page:not(.home):not(.page-id-9) .wp-block-post-content ul,
+    body.page:not(.home):not(.page-id-9) .entry-content ul,
+    body.page:not(.home):not(.page-id-9) h2:last-of-type + p + .wp-block-buttons {
+        padding: 24px;
+        border-radius: 22px;
+    }
+
+    body.page:not(.home):not(.page-id-9) p {
+        text-align: left;
+    }
+
+    body.page:not(.home):not(.page-id-9) .wp-block-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    body.page:not(.home):not(.page-id-9) .wp-block-button,
+    body.page:not(.home):not(.page-id-9) .wp-block-button__link,
+    body.page:not(.home):not(.page-id-9) .wp-element-button {
+        width: 100%;
+        text-align: center;
+    }
+}
