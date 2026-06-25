@@ -156,6 +156,23 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
     }
 }
 
+.alignfull {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.alignfull .alignwide {
+    max-width: var(--wp--style--global--content-size, 1280px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.wp-block-columns:has(.stat-card) {
+    gap: var(--wp--preset--spacing--60);
+}
+
 /* Mobile: reduce section padding in generic theme sections */
 @media (max-width: 600px) {
     .wp-block-cover.alignfull,
