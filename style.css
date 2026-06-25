@@ -782,6 +782,63 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
     margin-right: calc(50% - 50vw);
 }
 
+/* -------------------------------------------------------
+   Meetups Recientes — tarjetas dinámicas
+   ------------------------------------------------------- */
+
+.meetups-grid {
+    gap: var(--wp--preset--spacing--50);
+}
+
+.meetup-card {
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+}
+
+.meetup-card:hover {
+    box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
+}
+
+.meetup-card__image img {
+    border-radius: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.meetup-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.meetup-card__badge .wp-block-post-terms__separator {
+    display: none;
+}
+
+.meetup-card__badge a {
+    display: inline-block;
+    background-color: var(--wp--preset--color--primary-light);
+    color: var(--wp--preset--color--primary-dark);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2em 0.7em;
+    border-radius: 100px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.meetups-ver-todas .wp-block-button__link {
+    border: 1.5px solid var(--wp--preset--color--primary-muted);
+    color: var(--wp--preset--color--contrast) !important;
+    background: transparent !important;
+}
+
+.meetups-ver-todas .wp-block-button__link:hover {
+    border-color: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--primary) !important;
+}
+
 /* Actividades — separadores de fila */
 .wpgranada-row-sep {
     border: none;

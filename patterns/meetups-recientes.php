@@ -1,0 +1,80 @@
+<?php
+/**
+ * Title: Meetups Recientes
+ * Slug: wpgranada26/meetups-recientes
+ * Categories: wpgranada
+ * Description: Grid dinámico de meetups recientes del plugin Community Meetings.
+ * Keywords: meetups, charlas, eventos, grid, dinámico
+ */
+?>
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|80","right":"var:preset|spacing|80"},"blockGap":"var:preset|spacing|70"}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--100);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--80)">
+
+	<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+	<div class="wp-block-group">
+
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
+		<div class="wp-block-group">
+			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"accent","fontSize":"x-small","fontFamily":"body"} -->
+			<p class="has-accent-color has-text-color has-body-font-family has-x-small-font-size" style="font-weight:700;text-transform:uppercase;letter-spacing:0.1em">Últimas publicaciones</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:heading {"fontSize":"huge","fontFamily":"heading"} -->
+			<h2 class="wp-block-heading has-heading-font-family has-huge-font-size">Revive nuestras MeetUps</h2>
+			<!-- /wp:heading -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons">
+			<!-- wp:button {"style":{"border":{"radius":"100px"}},"backgroundColor":"base","textColor":"contrast","className":"meetups-ver-todas"} -->
+			<div class="wp-block-button meetups-ver-todas"><a class="wp-block-button__link has-contrast-color has-base-background-color has-text-color has-background wp-element-button" href="/charlas" style="border-radius:100px">Ver todas las charlas →</a></div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:query {"queryId":2,"query":{"perPage":3,"pages":0,"offset":0,"postType":"metgs_meeting","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"layout":{"type":"default"}} -->
+	<div class="wp-block-query">
+
+		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3},"className":"meetups-grid"} -->
+
+			<!-- wp:group {"style":{"spacing":{"blockGap":"0"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"},"className":"meetup-card"} -->
+			<div class="wp-block-group meetup-card has-base-background-color has-background has-border-color" style="border-color:#c7d1ff;border-width:1px;border-radius:12px">
+
+				<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","className":"meetup-card__image"} /-->
+
+				<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
+				<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+
+					<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"className":"meetup-card__meta"} -->
+					<div class="wp-block-group meetup-card__meta">
+						<!-- wp:post-terms {"term":"metgs_speaker","className":"meetup-card__badge"} /-->
+						<!-- wp:post-date {"format":"M Y","style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.05em"}},"textColor":"muted","fontSize":"x-small","fontFamily":"body"} /-->
+					</div>
+					<!-- /wp:group -->
+
+					<!-- wp:post-title {"isLink":true,"level":3,"style":{"typography":{"fontWeight":"700","lineHeight":"1.3"}},"fontSize":"x-large","fontFamily":"heading"} /-->
+
+					<!-- wp:read-more {"content":"Leer más →","style":{"typography":{"fontWeight":"600"}},"textColor":"primary","fontSize":"small","fontFamily":"body"} /-->
+
+				</div>
+				<!-- /wp:group -->
+
+			</div>
+			<!-- /wp:group -->
+
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-no-results -->
+		<!-- wp:paragraph {"style":{"typography":{"fontWeight":"500"}},"textColor":"muted","fontSize":"medium"} -->
+		<p class="has-muted-color has-text-color has-medium-font-size" style="font-weight:500">No hay meetups publicadas todavía.</p>
+		<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+
+	</div>
+	<!-- /wp:query -->
+
+</div>
+<!-- /wp:group -->
