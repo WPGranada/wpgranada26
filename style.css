@@ -9845,3 +9845,11 @@ body .wp-site-blocks > .wp-block-template-part:first-child {
 .actividades-col-title { flex-basis: 25%; }
 .actividades-col-desc  { flex-basis: 67%; }
 .actividades-col-num p { font-weight: 700; }
+
+/* CTA Speaker */
+.cta-speaker-section { text-align: center; }
+.btn-pill {
+    border-radius: 100px;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+}
