@@ -21,7 +21,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","textColor":"contrast","className":"meetups-ver-todas","style":{"border":{"radius":"100px"}}} -->
-<div class="wp-block-button meetups-ver-todas"><a class="wp-block-button__link has-contrast-color has-base-background-color has-text-color has-background wp-element-button" href="/charlas" style="border-radius:100px">Ver todas las charlas →</a></div>
+<div class="wp-block-button meetups-ver-todas"><a class="wp-block-button__link has-contrast-color has-base-background-color has-text-color has-background wp-element-button" href="/meetings" style="border-radius:100px">Ver todas las charlas →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
