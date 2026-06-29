@@ -155,3 +155,11 @@ function wpgranada26_remove_meeting_content_injection() {
 		add_filter( 'the_content', 'wpautop' );
 	}
 }
+
+add_filter( 'query_loop_block_query_vars', 'wpgranada26_sidebar_exclude_current', 10, 3 );
+function wpgranada26_sidebar_exclude_current( $query, $block, $page ) {
+	if ( isset( $block->context['queryId'] ) && 5 === (int) $block->context['queryId'] && is_singular( 'metgs_meeting' ) ) {
+		$query['post__not_in'] = array_merge( $query['post__not_in'] ?? array(), array( get_the_ID() ) );
+	}
+	return $query;
+}
