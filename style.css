@@ -9349,7 +9349,7 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 .site-header__title a,
 .site-header__title {
 	font-weight: 800;
-	font-size: 1.35rem;
+	font-size: clamp(1rem, 0.9rem + 0.5vw, 1.35rem);
 	line-height: 1.1;
 	color: var(--wp--preset--color--contrast);
 }
@@ -9692,6 +9692,6 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 
 
 /* About section */
-.about-h1 { font-size: 80px; line-height: 0.95; }
+.about-h1 { font-size: clamp(2.5rem, 1.786rem + 3.57vw, 5rem); line-height: 0.95; }
 .about-hero-img img { transform: rotate(3deg); box-shadow: 0 24px 60px rgba(16,24,40,0.18), 0 6px 16px rgba(56,88,233,0.10); }
 .organize-img img { transform: rotate(-3deg); box-shadow: 0 24px 60px rgba(16,24,40,0.18), 0 6px 16px rgba(56,88,233,0.10); }
