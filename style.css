@@ -10365,3 +10365,22 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 }
 
 .archive-post-card.wp-block-group { padding: 0 !important; }
+
+/* Classic nav menu in header */
+.wpgranada-nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wpgranada-nav-menu li { margin: 0; padding: 0; }
+.wpgranada-nav-menu a {
+    font-family: var(--wp--preset--font-family--body);
+    font-size: var(--wp--preset--font-size--medium);
+    font-weight: 600;
+    color: var(--wp--preset--color--contrast);
+    text-decoration: none;
+}
+.wpgranada-nav-menu a:hover { color: var(--wp--preset--color--primary); }
