@@ -9853,3 +9853,39 @@ body .wp-site-blocks > .wp-block-template-part:first-child {
     padding: 1rem 2.5rem;
     font-weight: 600;
 }
+
+/* -------------------------------------------------------
+   Hero Home — patrón wpgranada26/hero-home
+   ------------------------------------------------------- */
+
+.hero-home-section {
+    overflow: hidden;
+}
+
+.hero-event-card {
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(56, 88, 233, 0.10);
+}
+
+.hero-event-card .wp-block-post-featured-image img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px 16px 0 0;
+}
+
+.hero-event-card__cta.wp-block-read-more {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 781px) {
+    .hero-home-section .wp-block-columns {
+        flex-direction: column;
+    }
+    .hero-home-section .wp-block-column {
+        flex-basis: 100% !important;
+    }
+}
