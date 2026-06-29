@@ -20,7 +20,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"55%","className":"manifest-col-image"} -->
 <div class="wp-block-column is-vertically-aligned-center manifest-col-image" style="flex-basis:55%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"has-custom-border wpgranada-img-tilted","style":{"border":{"radius":"20px"}}} -->
-<figure class="wp-block-image size-full has-custom-border wpgranada-img-tilted"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/comunidad-local.webp" alt="Comunidad WordPress Granada" style="border-radius:20px"/></figure>
+<figure class="wp-block-image size-full has-custom-border wpgranada-img-tilted"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/about-hero.png" alt="Comunidad WordPress Granada" style="border-radius:20px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
