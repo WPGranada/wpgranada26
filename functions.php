@@ -103,6 +103,28 @@ function wpgranada26_nav_shortcode() {
 	);
 }
 
+add_filter( 'template_include', 'wpgranada26_meeting_archive_template', 99 );
+/**
+ * Force FSE block template for metgs_meeting archive, bypassing the plugin's
+ * classic PHP template override which hijacks archive_template filter.
+ *
+ * @param string $template Current template path.
+ * @return string
+ */
+function wpgranada26_meeting_archive_template( $template ) {
+	if ( ! is_post_type_archive( 'metgs_meeting' ) ) {
+		return $template;
+	}
+	$block_template = get_block_template( get_stylesheet() . '//archive-metgs_meeting', 'wp_template' );
+	if ( $block_template && $block_template->content ) {
+		global $_wp_current_template_content, $_wp_current_template_id;
+		$_wp_current_template_content = $block_template->content;
+		$_wp_current_template_id      = $block_template->id;
+		return ABSPATH . WPINC . '/template-canvas.php';
+	}
+	return $template;
+}
+
 add_action( 'wp_enqueue_scripts', 'wpgranada26_enqueue_styles' );
 /**
  * Enqueue theme stylesheet and scripts.
