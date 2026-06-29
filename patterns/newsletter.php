@@ -21,8 +21,8 @@ if ( class_exists( 'GFAPI' ) ) {
 <!-- wp:group {"metadata":{"categories":["wpgranada"],"patternName":"wpgranada26/newsletter","name":"Newsletter"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|100","right":"var:preset|spacing|100"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-right:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--100)">
 
-<!-- wp:group {"className":"alignwide newsletter-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|90","right":"var:preset|spacing|90"}},"border":{"radius":"20px"}},"backgroundColor":"primary-dark","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide newsletter-section has-primary-dark-background-color has-background" style="border-radius:20px;padding-top:var(--wp--preset--spacing--90);padding-right:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--90)">
+<!-- wp:group {"className":"alignwide newsletter-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|90","right":"var:preset|spacing|90"}},"border":{"radius":"40px"}},"backgroundColor":"primary","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide newsletter-section has-primary-background-color has-background" style="border-radius:40px;padding-top:var(--wp--preset--spacing--90);padding-right:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--90)">
 
 <!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|90"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-center">

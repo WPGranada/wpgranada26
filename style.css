@@ -9603,6 +9603,110 @@ body .wp-site-blocks > .wp-block-template-part:first-child {
     color: var(--wp--preset--color--primary) !important;
 }
 
+/* -------------------------------------------------------
+   Newsletter — Gravity Forms inline style
+   ------------------------------------------------------- */
+
+.newsletter-section .gform_wrapper {
+    margin: 0;
+}
+
+.newsletter-section form {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+	 flex-direction: row;
+}
+
+.newsletter-section .gform_body {
+    margin: 0;
+}
+
+.newsletter-section .gform_fields {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.newsletter-section .gfield {
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter-section .gfield input[type="email"],
+.newsletter-section .gfield input[type="text"] {
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    border: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-family: var(--wp--preset--font-family--body);
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--wp--preset--color--base);
+    outline: none;
+}
+
+.newsletter-section .gfield input[type="email"]::placeholder,
+.newsletter-section .gfield input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-section .gfield input[type="email"]:focus,
+.newsletter-section .gfield input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.newsletter-section .gform_footer,
+.newsletter-section .gform_page_footer {
+    margin: 0 !important;
+    padding: 0;
+    display: contents;
+}
+
+.newsletter-section .gform_button,
+.newsletter-section input[type="submit"],
+.newsletter-section button[type="submit"] {
+    padding: 0.85rem 1.75rem;
+    background-color: #F97316 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-family: var(--wp--preset--font-family--body);
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+.newsletter-section .gform_button:hover,
+.newsletter-section input[type="submit"]:hover,
+.newsletter-section button[type="submit"]:hover {
+    background-color: #e0620f !important;
+}
+
+.newsletter-section .gfield_validation_message,
+.newsletter-section .validation_message {
+    color: #ffd0b0;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.newsletter-section .gform_confirmation_message {
+    color: var(--wp--preset--color--base);
+    font-weight: 600;
+}
+
+.newsletter-section a {
+    color: var(--wp--preset--color--accent);
+    text-decoration: none;
+}
+
+.newsletter-section a:hover {
+    text-decoration: underline;
+}
+
 /* Actividades — separadores de fila */
 .wpgranada-row-sep {
     border: none;
