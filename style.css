@@ -1341,10 +1341,6 @@ main .wp-block-group {
     margin-bottom: 0;
 }
 
-main .wp-block-group + .wp-block-group {
-    margin-top: var(--wpgranada-espaciado-seccion);
-}
-
 /* Espaciado entre columnas y tarjetas */
 .wp-block-columns {
     gap: clamp(1.5rem, 3vw, 2.5rem);
