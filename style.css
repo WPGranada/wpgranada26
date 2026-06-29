@@ -9925,17 +9925,17 @@ body .wp-site-blocks > .wp-block-template-part:first-child {
 
 /* Archive template */
 .archive-hero-section.wp-block-group { padding: var(--wp--preset--spacing--90) var(--wp--preset--spacing--80) var(--wp--preset--spacing--70); }
-.archive-hero-title { font-weight: 800; line-height: 1.1; }
-.archive-hero-desc { line-height: 1.6; max-width: 60ch; }
+.archive-hero-title { font-weight: 800; line-height: 1.05; }
+.archive-hero-desc { line-height: 1.6; max-width: 65ch; }
 .archive-featured-section.wp-block-group { padding: 0 var(--wp--preset--spacing--80) var(--wp--preset--spacing--80); }
-.archive-featured-card { border: 1px solid var(--wp--preset--color--primary-light); border-radius: 16px; overflow: hidden; }
-.archive-featured-image-col { flex-basis: 52%; }
-.archive-featured-body-col { flex-basis: 48%; padding: var(--wp--preset--spacing--70); }
-.archive-featured-img img { border-radius: 16px 0 0 16px; width: 100%; height: 100%; object-fit: cover; }
-.archive-featured-badge { font-weight: 700; }
+.archive-featured-card.wp-block-columns { border: 1px solid var(--wp--preset--color--primary-light); border-radius: 16px; overflow: hidden; gap: 0; }
+.archive-featured-image-col.wp-block-column { flex-basis: 52% !important; }
+.archive-featured-image-col .wp-block-post-featured-image img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0; }
+.archive-featured-body-col.wp-block-column { flex-basis: 48% !important; padding: var(--wp--preset--spacing--70); }
+.archive-featured-cat a { display: inline-block; background-color: var(--wp--preset--color--accent); color: #fff; border-radius: 100px; padding: 0.2rem 0.75rem; font-size: 0.75rem; font-weight: 700; text-decoration: none; }
+.archive-featured-cat .wp-block-post-terms__separator { display: none; }
 .archive-posts-section.wp-block-group { padding: var(--wp--preset--spacing--80); }
-.archive-posts-header { margin-bottom: var(--wp--preset--spacing--60); }
-.archive-posts-title { font-weight: 800; }
+.archive-posts-title { font-weight: 800; margin-bottom: var(--wp--preset--spacing--60); }
 .archive-post-card { border: 1px solid var(--wp--preset--color--primary-light); border-radius: 12px; overflow: hidden; }
 .archive-post-card__body { padding: var(--wp--preset--spacing--50); gap: var(--wp--preset--spacing--30); }
 .archive-post-card .wp-block-post-title { font-weight: 700; line-height: 1.3; }
