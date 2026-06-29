@@ -134,10 +134,16 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
 /* Footer */
 .site-footer a {
     text-decoration: none;
+    color: var(--wp--preset--color--base);
 }
 
 .site-footer a:hover {
-    color: var(--wp--preset--color--base);
+    opacity: 0.75;
+}
+
+.footer-logo img {
+    width: 160px;
+    height: auto;
 }
 
 /* Hero cover adjustments */
