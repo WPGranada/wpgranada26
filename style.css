@@ -9516,7 +9516,8 @@ body .wp-site-blocks > .wp-block-template-part:first-child {
         max-width: 44px !important;
         max-height: 44px !important;
     }
-=======
+
+}
 
 /* Full-bleed: rompe el contenedor y ocupa 100vw */
 .wpgranada-full-bleed {
