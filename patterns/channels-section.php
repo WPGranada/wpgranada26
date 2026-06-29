@@ -21,7 +21,9 @@
 <!-- wp:columns {"className":"alignwide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
-<div class="wp-block-group channel-card has-border-color has-base-background-color has-background" style="border-color:#c7d1ff;border-width:1px;border-radius:12px;padding-top:2.5rem;padding-right:2.5rem;padding-bottom:2.5rem;padding-left:2.5rem"><!-- wp:outermost/icon-block {"iconName":"","iconColorValue":"#3858e9","width":"40px","className":"wp-block-outermost-icon-block"} /-->
+<div class="wp-block-group channel-card has-border-color has-base-background-color has-background" style="border-color:#c7d1ff;border-width:1px;border-radius:12px;padding-top:2.5rem;padding-right:2.5rem;padding-bottom:2.5rem;padding-left:2.5rem"><!-- wp:image {"width":"40px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="/wp-content/themes/wpgranada26/assets/images/meetup.svg" alt="Meetup" style="width:40px"/></figure>
+<!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"fontSize":"x-large","fontFamily":"heading"} -->
 <h3 class="wp-block-heading has-heading-font-family has-x-large-font-size" style="font-weight:700">Meetup</h3>
@@ -39,7 +41,9 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
-<div class="wp-block-group channel-card has-border-color has-base-background-color has-background" style="border-color:#c7d1ff;border-width:1px;border-radius:12px;padding-top:2.5rem;padding-right:2.5rem;padding-bottom:2.5rem;padding-left:2.5rem"><!-- wp:outermost/icon-block {"iconName":"","iconColorValue":"#3858e9","width":"40px","className":"wp-block-outermost-icon-block"} /-->
+<div class="wp-block-group channel-card has-border-color has-base-background-color has-background" style="border-color:#c7d1ff;border-width:1px;border-radius:12px;padding-top:2.5rem;padding-right:2.5rem;padding-bottom:2.5rem;padding-left:2.5rem"><!-- wp:image {"width":"40px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="/wp-content/themes/wpgranada26/assets/images/youtube.svg" alt="YouTube" style="width:40px"/></figure>
+<!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"fontSize":"x-large","fontFamily":"heading"} -->
 <h3 class="wp-block-heading has-heading-font-family has-x-large-font-size" style="font-weight:700">YouTube</h3>
@@ -57,7 +61,9 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
-<div class="wp-block-group channel-card has-border-color has-base-background-color has-background" style="border-color:#c7d1ff;border-width:1px;border-radius:12px;padding-top:2.5rem;padding-right:2.5rem;padding-bottom:2.5rem;padding-left:2.5rem"><!-- wp:outermost/icon-block {"iconName":"","iconColorValue":"#3858e9","width":"40px","className":"wp-block-outermost-icon-block"} /-->
+<div class="wp-block-group channel-card has-border-color has-base-background-color has-background" style="border-color:#c7d1ff;border-width:1px;border-radius:12px;padding-top:2.5rem;padding-right:2.5rem;padding-bottom:2.5rem;padding-left:2.5rem"><!-- wp:image {"width":"40px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="/wp-content/themes/wpgranada26/assets/images/telegram.svg" alt="Telegram" style="width:40px"/></figure>
+<!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"fontSize":"x-large","fontFamily":"heading"} -->
 <h3 class="wp-block-heading has-heading-font-family has-x-large-font-size" style="font-weight:700">Telegram</h3>
