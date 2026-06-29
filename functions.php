@@ -147,3 +147,11 @@ function wpgranada26_enqueue_styles() {
 		true
 	);
 }
+
+add_action( 'wp', 'wpgranada26_remove_meeting_content_injection' );
+function wpgranada26_remove_meeting_content_injection() {
+	if ( is_singular( 'metgs_meeting' ) ) {
+		remove_all_filters( 'the_content' );
+		add_filter( 'the_content', 'wpautop' );
+	}
+}
