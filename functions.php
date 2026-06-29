@@ -187,3 +187,15 @@ function wpgranada26_sidebar_exclude_current( $query, $block, $page ) {
 	}
 	return $query;
 }
+
+add_filter( 'upgrader_source_selection', 'wpgranada26_exclude_git_from_upgrade', 10, 4 );
+function wpgranada26_exclude_git_from_upgrade( $source, $remote_source, $upgrader, $hook_extra ) {
+	$git_dir = trailingslashit( $source ) . '.git';
+	if ( is_dir( $git_dir ) ) {
+		$upgrader->skin->feedback( 'Removing .git directory from package...' );
+		WP_Filesystem();
+		global $wp_filesystem;
+		$wp_filesystem->delete( $git_dir, true );
+	}
+	return $source;
+}
