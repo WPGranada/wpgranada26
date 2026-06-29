@@ -9695,3 +9695,16 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 .about-h1 { font-size: clamp(2.5rem, 1.786rem + 3.57vw, 5rem); line-height: 0.95; }
 .about-hero-img img { transform: rotate(3deg); box-shadow: 0 24px 60px rgba(16,24,40,0.18), 0 6px 16px rgba(56,88,233,0.10); }
 .organize-img img { transform: rotate(-3deg); box-shadow: 0 24px 60px rgba(16,24,40,0.18), 0 6px 16px rgba(56,88,233,0.10); }
+
+/* Single Meeting template */
+.single-meeting-hero { padding-top: 3rem; padding-bottom: 3rem; }
+.single-meeting-hero__inner { gap: 3rem !important; }
+.single-meeting-title.wp-block-post-title { font-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; }
+.single-meeting-excerpt { line-height: 1.65; }
+.single-meeting-tag .wp-block-post-terms__separator { display: none; }
+.single-meeting-tag a { display: inline-block; background: var(--wp--preset--color--accent); color: #fff; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.3rem 0.8rem; border-radius: 100px; text-decoration: none; }
+.single-meeting-body { padding-top: 2rem; padding-bottom: 4rem; }
+.single-meeting-body__inner { gap: 3rem !important; align-items: flex-start; }
+.single-meeting-sidebar { position: sticky; top: 2rem; }
+.single-meeting-sidebar .sidebar-card { margin-bottom: 1.5rem; }
+.single-meeting-sidebar .sidebar-recent .wp-block-post-template { margin: 0; padding: 0; }
