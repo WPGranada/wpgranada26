@@ -85,6 +85,52 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
     border-radius: 12px;
 }
 
+/* Imagen inclinada con sombra — patrón manifiesto comunidad */
+.wpgranada-img-tilted img {
+    transform: rotate(2deg);
+    box-shadow: 0 24px 60px rgba(16, 24, 40, 0.22);
+    display: block;
+}
+
+/* Block style: Textos secundarios */
+.wp-block-paragraph.is-style-textos-secundarios {
+    font-family: var(--wp--preset--font-family--body);
+    font-size: 12.5px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--wp--preset--color--primary);
+}
+
+/* Classic nav menu via shortcode */
+.wpgranada-nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wpgranada-nav-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.wpgranada-nav-menu a {
+    font-family: var(--wp--preset--font-family--body);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--wp--preset--color--contrast);
+    text-decoration: none;
+}
+
+.wpgranada-nav-menu a:hover {
+    color: var(--wp--preset--color--primary);
+}
+
 /* Footer */
 .site-footer a {
     text-decoration: none;
@@ -108,6 +154,23 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
     .next-event-card .wp-block-media-text__content {
         padding: var(--wp--preset--spacing--60);
     }
+}
+
+.alignfull {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.alignfull .alignwide {
+    max-width: var(--wp--style--global--content-size, 1280px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.wp-block-columns:has(.stat-card) {
+    gap: var(--wp--preset--spacing--60);
 }
 
 /* Mobile: reduce section padding in generic theme sections */
@@ -312,29 +375,41 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
    MARQUEE / TEXTO EN MOVIMIENTO
    ------------------------------------------------------- */
 
+.wpgranada-marquee-items {
+    padding: 1.15rem var(--wp--preset--spacing--80);
+    gap: 0.5rem 2rem;
+}
+
 .wpgranada-marquee-section {
     position: relative;
     border-top: 1px solid rgba(16, 24, 40, 0.08);
     border-bottom: 1px solid rgba(16, 24, 40, 0.08);
     background: var(--wp--preset--color--contrast);
     overflow: hidden;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
 
 .wpgranada-marquee {
-    display: inline-block;
+    display: flex;
     width: max-content;
-    min-width: 200%;
     margin: 0;
-    padding: 1.15rem 0;
+    padding: 0;
+    will-change: transform;
+}
+
+.wpgranada-marquee-content {
+    display: inline-flex;
+    align-items: center;
     white-space: nowrap;
+    padding: 1.15rem 0;
     font-family: var(--wp--preset--font-family--heading);
     font-size: clamp(1.1rem, 3vw, 2rem);
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--wp--preset--color--base);
-    animation: wpgranada-marquee-continuous 26s linear infinite;
-    will-change: transform;
 }
 
 @keyframes wpgranada-marquee-continuous {
@@ -343,8 +418,13 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(calc(-1 * var(--marquee-copy-width, 50%)));
     }
+}
+
+.wpgranada-marquee-dot {
+    color: var(--wp--preset--color--accent);
+    margin: 0 0.6em;
 }
 
 /* -------------------------------------------------------
@@ -1205,8 +1285,7 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
         display: block;
     }
 }
-/* ==========================================================
-   Mejora de coherencia visual - 20/05/2026
+/* ===================================================   Mejora de coherencia visual - 20/05/2026
    Ajustes globales de títulos, botones, enlaces y espaciados
    ========================================================== */
 
@@ -9437,4 +9516,90 @@ body .wp-site-blocks > .wp-block-template-part:first-child {
         max-width: 44px !important;
         max-height: 44px !important;
     }
+=======
+
+/* Full-bleed: rompe el contenedor y ocupa 100vw */
+.wpgranada-full-bleed {
+	 padding-bottom: 100px;
+    padding-top: 50px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+/* -------------------------------------------------------
+   Meetups Recientes — tarjetas dinámicas
+   ------------------------------------------------------- */
+
+.meetups-grid {
+    gap: var(--wp--preset--spacing--50);
+}
+
+.meetups-grid > * {
+    display: flex;
+}
+
+.meetup-card {
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.meetup-card > .wp-block-group {
+    flex: 1;
+}
+
+.meetup-card:hover {
+    box-shadow: 0 8px 24px rgba(56, 88, 233, 0.12);
+}
+
+.meetup-card__image img {
+    border-radius: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.meetup-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.meetup-card__badge .wp-block-post-terms__separator {
+    display: none;
+}
+
+.meetup-card__badge a {
+    display: inline-block;
+    background-color: var(--wp--preset--color--primary-light);
+    color: var(--wp--preset--color--primary-dark);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2em 0.7em;
+    border-radius: 100px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.meetups-ver-todas .wp-block-button__link {
+    border: 1.5px solid var(--wp--preset--color--primary-muted);
+    color: var(--wp--preset--color--contrast) !important;
+    background: transparent !important;
+}
+
+.meetups-ver-todas .wp-block-button__link:hover {
+    border-color: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--primary) !important;
+}
+
+/* Actividades — separadores de fila */
+.wpgranada-row-sep {
+    border: none;
+    border-top: 1px solid #D0D5DD;
+    margin: 0;
+    height: 0;
 }
