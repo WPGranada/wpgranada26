@@ -7,8 +7,8 @@
  * Keywords: meetups, charlas, eventos, grid, dinámico
  */
 ?>
-<!-- wp:group {"metadata":{"categories":["wpgranada"],"patternName":"wpgranada26/meetups-recientes","name":"Meetups Recientes"},"align":"full","className":"wpgranada-meetups-wrapper","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|80","right":"var:preset|spacing|80"},"blockGap":"var:preset|spacing|70"}},"backgroundColor":"base"} -->
-<div class="wp-block-group alignfull wpgranada-meetups-wrapper has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--100);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--80)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+<!-- wp:group {"metadata":{"categories":["wpgranada"],"patternName":"wpgranada26/meetups-recientes","name":"Meetups Recientes"},"align":"full","className":"wpgranada-meetups-wrapper","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100"},"blockGap":"var:preset|spacing|70"}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull wpgranada-meetups-wrapper has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-accent-color has-text-color has-body-font-family has-x-small-font-size is-label","style":{"typography":{"fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"accent","fontSize":"x-small"} -->
 <p class="has-accent-color has-text-color has-body-font-family has-x-small-font-size is-label" style="font-weight:700;letter-spacing:0.1em;text-transform:uppercase">Últimas publicaciones</p>
@@ -21,7 +21,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","textColor":"contrast","className":"meetups-ver-todas","style":{"border":{"radius":"100px"}}} -->
-<div class="wp-block-button meetups-ver-todas"><a class="wp-block-button__link has-contrast-color has-base-background-color has-text-color has-background wp-element-button" href="/meetings" style="border-radius:100px">Ver todas las charlas →</a></div>
+<div class="wp-block-button meetups-ver-todas"><a class="wp-block-button__link has-contrast-color has-base-background-color has-text-color has-background wp-element-button" href="/meeting" style="border-radius:100px">Ver todas las charlas →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
