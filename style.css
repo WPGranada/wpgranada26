@@ -9889,3 +9889,7 @@ body .wp-site-blocks > .wp-block-template-part:first-child {
         flex-basis: 100% !important;
     }
 }
+
+.hero-event-card.wp-block-group {
+    padding: 0 !important;
+}
