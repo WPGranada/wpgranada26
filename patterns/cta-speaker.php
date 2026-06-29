@@ -18,8 +18,8 @@
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"className":"has-tertiary-color has-text-color has-body-font-family has-medium-font-size lh-relaxed","style":{"typography":{"lineHeight":"1.6","textAlign":"center"}},"textColor":"tertiary","fontSize":"medium"} -->
-<p class="has-text-align-center has-tertiary-color has-text-color has-body-font-family has-medium-font-size lh-relaxed" style="line-height:1.6">Comparte tu conocimiento con la comunidad. Buscamos speakers apasionados que quieran inspirar a otros profesionales.</p>
+<!-- wp:paragraph {"className":"has-muted-color has-text-color has-body-font-family has-medium-font-size lh-relaxed","style":{"typography":{"lineHeight":"1.6","textAlign":"center"}},"textColor":"muted","fontSize":"medium"} -->
+<p class="has-text-align-center has-muted-color has-text-color has-body-font-family has-medium-font-size lh-relaxed" style="line-height:1.6">Comparte tu conocimiento con la comunidad. Buscamos speakers apasionados que quieran inspirar a otros profesionales.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
