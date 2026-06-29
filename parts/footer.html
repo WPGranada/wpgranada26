@@ -1,141 +1,68 @@
-<!-- wp:group {"backgroundColor":"contrast","className":"site-footer","textColor":"base","layout":{"type":"constrained"}} -->
-<div class="wp-block-group site-footer has-base-color has-contrast-background-color has-text-color has-background">
+<!-- wp:group {"tagName":"footer","backgroundColor":"contrast","className":"site-footer","textColor":"base","layout":{"type":"constrained"}} -->
+<footer class="wp-block-group site-footer has-base-color has-contrast-background-color has-text-color has-background">
 
-    <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|100"}}}} -->
-    <div class="wp-block-columns">
+    <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"0"},"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80"}}}} -->
+    <div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80)">
 
         <!-- wp:column {"width":"40%","className":"footer-col-brand"} -->
-        <div class="wp-block-column footer-col-brand" style="flex-basis:40%">
+        <div class="wp-block-column footer-col-brand" style="flex-basis:40%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:image {"linkDestination":"custom","className":"footer-logo"} -->
+<figure class="wp-block-image footer-logo"><a href="/"><img src="/wp-content/themes/wpgranada26/assets/images/logo-footer.png" alt="WordPress Granada"/></a></figure>
+<!-- /wp:image -->
 
-            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
-            <div class="wp-block-group">
+<!-- wp:paragraph {"className":"site-footer__desc","textColor":"base","fontSize":"small","fontFamily":"body"} -->
+<p class="site-footer__desc has-base-color has-text-color has-body-font-family has-small-font-size">Comunidad local de profesionales, estudiantes y personas interesadas en WordPress. Meetups, charlas, networking y aprendizaje continuo desde 2016.</p>
+<!-- /wp:paragraph -->
 
-                <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"footer-logo"} -->
-                <figure class="wp-block-image size-full footer-logo"><img src="/wp-content/themes/wpgranada26/assets/images/logo-footer.png" alt="WordPress Granada"/></figure>
-                <!-- /wp:image -->
-
-                <!-- wp:paragraph {"className":"site-footer__desc","textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="site-footer__desc has-base-color has-text-color has-body-font-family has-small-font-size">Comunidad local de profesionales, estudiantes y personas interesadas en WordPress en Granada. Meetups, charlas, networking y aprendizaje continuo.</p>
-                <!-- /wp:paragraph -->
-
-            </div>
-            <!-- /wp:group -->
-
-        </div>
+<!-- wp:social-links {"iconColor":"base","iconColorValue":"#FFFFFF","size":"has-normal-icon-size","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"left":"1.25rem"}}}} -->
+<ul class="wp-block-social-links has-normal-icon-size has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://www.linkedin.com/company/wpgranada","service":"linkedin"} /-->
+<!-- wp:social-link {"url":"https://www.instagram.com/wpgranada","service":"instagram"} /-->
+<!-- wp:social-link {"url":"https://youtube.com/@wpgranada","service":"youtube"} /-->
+<!-- wp:social-link {"url":"https://t.me/wpgranada","service":"telegram"} /--></ul>
+<!-- /wp:social-links --></div>
+<!-- /wp:group --></div>
         <!-- /wp:column -->
 
-        <!-- wp:column {"width":"20%","className":"footer-col-nav"} -->
-        <div class="wp-block-column footer-col-nav" style="flex-basis:20%">
+        <!-- wp:column {"width":"60%","className":"footer-col-menus"} -->
+        <div class="wp-block-column footer-col-menus" style="flex-basis:60%"><!-- wp:group {"layout":{"type":"flex","justifyContent":"flex-end","flexWrap":"wrap","verticalAlignment":"top"},"style":{"spacing":{"blockGap":"var:preset|spacing|80"}}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":6,"className":"site-footer__nav-heading","textColor":"base","fontSize":"x-small","fontFamily":"body"} -->
+<h6 class="wp-block-heading site-footer__nav-heading has-base-color has-text-color has-body-font-family has-x-small-font-size">Eventos</h6>
+<!-- /wp:heading -->
 
-            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
-            <div class="wp-block-group">
+<!-- wp:shortcode -->
+[wpgranada_footer_eventos]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group -->
 
-                <!-- wp:heading {"level":6,"className":"site-footer__nav-heading","textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <h6 class="wp-block-heading site-footer__nav-heading has-base-color has-text-color has-body-font-family has-small-font-size">Eventos</h6>
-                <!-- /wp:heading -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":6,"className":"site-footer__nav-heading","textColor":"base","fontSize":"x-small","fontFamily":"body"} -->
+<h6 class="wp-block-heading site-footer__nav-heading has-base-color has-text-color has-body-font-family has-x-small-font-size">Comunidad</h6>
+<!-- /wp:heading -->
 
-                <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="has-base-color has-text-color has-body-font-family has-small-font-size"><a href="/eventos/">Próximos eventos</a></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="has-base-color has-text-color has-body-font-family has-small-font-size"><a href="/eventos-pasados/">Eventos pasados</a></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="has-base-color has-text-color has-body-font-family has-small-font-size"><a href="/calendario/">Calendario</a></p>
-                <!-- /wp:paragraph -->
-
-            </div>
-            <!-- /wp:group -->
-
-        </div>
-        <!-- /wp:column -->
-
-        <!-- wp:column {"width":"20%","className":"footer-col-nav"} -->
-        <div class="wp-block-column footer-col-nav" style="flex-basis:20%">
-
-            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
-            <div class="wp-block-group">
-
-                <!-- wp:heading {"level":6,"className":"site-footer__nav-heading","textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <h6 class="wp-block-heading site-footer__nav-heading has-base-color has-text-color has-body-font-family has-small-font-size">Comunidad</h6>
-                <!-- /wp:heading -->
-
-                <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="has-base-color has-text-color has-body-font-family has-small-font-size"><a href="/comunidad/">Sobre nosotros</a></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="has-base-color has-text-color has-body-font-family has-small-font-size"><a href="/ser-ponente/">Ser ponente</a></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="has-base-color has-text-color has-body-font-family has-small-font-size"><a href="/codigo-de-conducta/">Código de conducta</a></p>
-                <!-- /wp:paragraph -->
-
-            </div>
-            <!-- /wp:group -->
-
-        </div>
-        <!-- /wp:column -->
-
-        <!-- wp:column {"width":"20%","className":"footer-col-nav"} -->
-        <div class="wp-block-column footer-col-nav" style="flex-basis:20%">
-
-            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
-            <div class="wp-block-group">
-
-                <!-- wp:heading {"level":6,"className":"site-footer__nav-heading","textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <h6 class="wp-block-heading site-footer__nav-heading has-base-color has-text-color has-body-font-family has-small-font-size">Conecta</h6>
-                <!-- /wp:heading -->
-
-                <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="has-base-color has-text-color has-body-font-family has-small-font-size"><a href="https://www.meetup.com/es-es/granada-wordpress-meetup/" target="_blank" rel="noreferrer noopener">Meetup</a></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="has-base-color has-text-color has-body-font-family has-small-font-size"><a href="https://youtube.com/@wpgranada" target="_blank" rel="noreferrer noopener">YouTube</a></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-                <p class="has-base-color has-text-color has-body-font-family has-small-font-size"><a href="/contacto/">Contacto</a></p>
-                <!-- /wp:paragraph -->
-
-            </div>
-            <!-- /wp:group -->
-
-        </div>
+<!-- wp:shortcode -->
+[wpgranada_footer_comunidad]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
         <!-- /wp:column -->
 
     </div>
     <!-- /wp:columns -->
 
-    <!-- wp:separator {"backgroundColor":"primary-dark","className":"footer-separator"} -->
-    <hr class="wp-block-separator footer-separator has-text-color has-alpha-channel-opacity has-primary-dark-color has-primary-dark-background-color has-background"/>
-    <!-- /wp:separator -->
+    <!-- wp:group {"className":"site-footer__bottom","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+    <div class="wp-block-group site-footer__bottom" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
 
-    <!-- wp:group {"className":"site-footer__bottom","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
-    <div class="wp-block-group site-footer__bottom">
-
-        <!-- wp:paragraph {"textColor":"base","fontSize":"small","fontFamily":"body"} -->
-        <p class="has-base-color has-text-color has-body-font-family has-small-font-size">© 2026 WordPress Granada. Comunidad local de WordPress en Granada.</p>
+        <!-- wp:paragraph {"textColor":"muted","fontSize":"x-small","fontFamily":"body"} -->
+        <p class="has-muted-color has-text-color has-body-font-family has-x-small-font-size">© 2026 WordPress Granada · Hecho con ♥ y código en Granada.</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:social-links {"iconColor":"base","iconColorValue":"#FFFFFF","size":"has-small-icon-size","className":"is-style-logos-only"} -->
-        <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only">
-
-            <!-- wp:social-link {"url":"https://twitter.com/wpgranada","service":"x"} /-->
-
-            <!-- wp:social-link {"url":"https://youtube.com/@wpgranada","service":"youtube"} /-->
-
-            <!-- wp:social-link {"url":"https://github.com/wpgranada","service":"github"} /-->
-
-        </ul>
-        <!-- /wp:social-links -->
+        <!-- wp:paragraph {"textColor":"muted","fontSize":"x-small","fontFamily":"body"} -->
+        <p class="has-muted-color has-text-color has-body-font-family has-x-small-font-size">Funciona gracias a <a href="https://wordpress.org" target="_blank" rel="noreferrer noopener">WordPress</a></p>
+        <!-- /wp:paragraph -->
 
     </div>
     <!-- /wp:group -->
 
-</div>
+</footer>
 <!-- /wp:group -->

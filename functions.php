@@ -65,7 +65,9 @@ function wpgranada26_setup() {
 
 	register_nav_menus(
 		array(
-			'menu-principal' => __( 'Menú Principal', 'wpgranada26' ),
+			'menu-principal'  => __( 'Menú Principal', 'wpgranada26' ),
+			'footer-eventos'  => __( 'Footer - Eventos', 'wpgranada26' ),
+			'footer-comunidad' => __( 'Footer - Comunidad', 'wpgranada26' ),
 		)
 	);
 }
@@ -101,6 +103,28 @@ function wpgranada26_nav_shortcode() {
 			'fallback_cb'    => false,
 		)
 	);
+}
+
+add_shortcode( 'wpgranada_footer_eventos', 'wpgranada26_footer_eventos_shortcode' );
+function wpgranada26_footer_eventos_shortcode() {
+	return wp_nav_menu( array(
+		'theme_location' => 'footer-eventos',
+		'echo'           => false,
+		'container'      => false,
+		'menu_class'     => 'footer-nav-menu',
+		'fallback_cb'    => false,
+	) );
+}
+
+add_shortcode( 'wpgranada_footer_comunidad', 'wpgranada26_footer_comunidad_shortcode' );
+function wpgranada26_footer_comunidad_shortcode() {
+	return wp_nav_menu( array(
+		'theme_location' => 'footer-comunidad',
+		'echo'           => false,
+		'container'      => false,
+		'menu_class'     => 'footer-nav-menu',
+		'fallback_cb'    => false,
+	) );
 }
 
 add_filter( 'template_include', 'wpgranada26_meeting_archive_template', 99 );
