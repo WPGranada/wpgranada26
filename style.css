@@ -9907,3 +9907,22 @@ body .wp-site-blocks > .wp-block-template-part:first-child {
 .site-footer__nav-heading { font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
 .footer-separator { margin-top: 0; margin-bottom: 0; }
 .site-footer__bottom { gap: 1rem; }
+
+/* Hero Home pattern */
+.hero-home-section.wp-block-group { padding: var(--wp--preset--spacing--90) var(--wp--preset--spacing--80); }
+.hero-home-col-text { flex-basis: 55%; }
+.hero-home-col-card { flex-basis: 45%; }
+.hero-home-label { font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.hero-home-title { font-size: 100px; font-weight: 900; line-height: 0.92; text-transform: uppercase; }
+.hero-home-tagline { font-weight: 700; line-height: 1.2; }
+.hero-home-desc { line-height: 1.6; }
+.hero-home-btn .wp-block-button__link { border-radius: 100px; padding: 0.875rem 2rem; }
+.hero-event-card.wp-block-group { border: 1px solid var(--wp--preset--color--primary-muted); border-radius: 16px; overflow: hidden; }
+.hero-event-card .wp-block-post-featured-image img { border-radius: 16px 16px 0 0; }
+.hero-event-card__body.wp-block-group { padding: var(--wp--preset--spacing--60); gap: var(--wp--preset--spacing--40); }
+.hero-event-card__label { font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.hero-event-card__date { font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
+.hero-event-card .wp-block-post-title { font-weight: 700; line-height: 1.2; }
+.hero-event-card .wp-block-post-excerpt__excerpt { line-height: 1.5; }
+.hero-event-card__location p { font-size: 0.8rem; }
+.hero-event-card__cta { border-radius: 100px; padding: 0.875rem 1.5rem; display: block; text-align: center; }
