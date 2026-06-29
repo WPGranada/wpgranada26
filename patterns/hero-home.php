@@ -43,7 +43,7 @@
 <div class="wp-block-column is-vertically-aligned-top hero-home-col-card"><!-- wp:query {"queryId":20,"query":{"perPage":1,"pages":0,"offset":0,"postType":"metgs_meeting","order":"desc","orderBy":"date","inherit":false,"sticky":"","parents":[],"format":[]},"layout":{"type":"default"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default"}} -->
 <!-- wp:group {"className":"hero-event-card","style":{"spacing":{"blockGap":"0"}},"backgroundColor":"base"} -->
-<div class="wp-block-group hero-event-card has-base-background-color has-background"><!-- wp:post-featured-image {"aspectRatio":"16/9"} /-->
+<div class="wp-block-group hero-event-card has-base-background-color has-background"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9"} /-->
 
 <!-- wp:group {"className":"hero-event-card__body","backgroundColor":"primary-light","layout":{"type":"default"}} -->
 <div class="wp-block-group hero-event-card__body has-primary-light-background-color has-background"><!-- wp:group {"style":{"spacing":{"blockGap":"0.35em"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
@@ -54,7 +54,7 @@
 <!-- wp:post-date {"format":"j M","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}},"className":"hero-event-card__date","textColor":"primary","fontSize":"x-small","fontFamily":"body"} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:post-title {"level":3,"fontSize":"x-large","fontFamily":"heading"} /-->
+<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"x-large","fontFamily":"heading"} /-->
 
 <!-- wp:post-excerpt {"moreText":"","excerptLength":25,"textColor":"tertiary","fontSize":"small","fontFamily":"body"} /-->
 

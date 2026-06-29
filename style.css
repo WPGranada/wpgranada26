@@ -9344,18 +9344,11 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 .site-header.wp-block-group {
 	padding: 1.2rem var(--wp--preset--spacing--80);
 	border-bottom: 1px solid var(--wp--preset--color--primary-light);
-	position: fixed;
+	position: sticky;
 	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
 	z-index: 1000;
 	backdrop-filter: blur(8px);
 	background-color: rgba(255,255,255,0.92);
-}
-
-.wp-site-blocks {
-	padding-top: 73px;
 }
 
 .site-header__title a,
