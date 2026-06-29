@@ -45,7 +45,7 @@
 <!-- wp:group {"className":"hero-event-card","style":{"spacing":{"blockGap":"0"}},"backgroundColor":"base"} -->
 <div class="wp-block-group hero-event-card has-base-background-color has-background"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9"} /-->
 
-<!-- wp:group {"className":"hero-event-card__body","backgroundColor":"primary-light","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"hero-event-card__body","backgroundColor":"primary-light","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group hero-event-card__body has-primary-light-background-color has-background"><!-- wp:group {"style":{"spacing":{"blockGap":"0.35em"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"hero-event-card__label","textColor":"primary","fontSize":"x-small","fontFamily":"body"} -->
 <p class="hero-event-card__label has-primary-color has-text-color has-body-font-family has-x-small-font-size">Próxima Meetup ·</p>
