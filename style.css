@@ -9714,3 +9714,134 @@ body .wp-site-blocks > .wp-block-template-part:first-child {
     margin: 0;
     height: 0;
 }
+/* -------------------------------------------------------
+   Pattern inline styles → CSS classes
+   ------------------------------------------------------- */
+
+/* Typography utilities */
+.is-label {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.lh-tight      { line-height: 1.1; }
+.lh-snug       { line-height: 1.3; }
+.lh-normal     { line-height: 1.5; }
+.lh-relaxed    { line-height: 1.6; }
+.lh-compressed { line-height: 0.9; }
+.fw-medium     { font-weight: 500; }
+.fw-semibold   { font-weight: 600; }
+.fw-bold       { font-weight: 700; }
+.fw-extrabold  { font-weight: 800; line-height: 1.15; }
+
+/* Button styles */
+.btn-cta {
+    border-radius: 8px;
+    padding: 1.25rem 2.5rem;
+    font-weight: 600;
+}
+.btn-cta-outline {
+    border-color: var(--wp--preset--color--primary);
+    border-width: 2px;
+    border-radius: 8px;
+    padding: 1.25rem 2.5rem;
+    font-weight: 600;
+}
+
+/* Hero */
+.hero-section.wp-block-cover {
+    min-height: 600px;
+    padding: var(--wp--preset--spacing--100);
+}
+.hero-badge {
+    border-radius: 100px;
+    padding: 0.625rem 1.5rem;
+}
+
+/* Stats section */
+.wpgranada-stats-section { padding: var(--wp--preset--spacing--100); }
+.stat-card               { padding: var(--wp--preset--spacing--80); }
+.stat-card .wp-block-heading { line-height: 0.9; }
+.stat-card p             { font-weight: 600; }
+
+/* Newsletter */
+.wpgranada-newsletter-wrapper { padding: var(--wp--preset--spacing--100); }
+.newsletter-section {
+    border-radius: 40px;
+    padding: var(--wp--preset--spacing--90);
+}
+.newsletter-section mark {
+    background: transparent;
+    color: var(--wp--preset--color--accent);
+}
+.newsletter-col { flex-basis: 50%; }
+
+/* Meetups */
+.wpgranada-meetups-wrapper {
+    padding-top: var(--wp--preset--spacing--100);
+    padding-right: var(--wp--preset--spacing--80);
+    padding-bottom: var(--wp--preset--spacing--100);
+    padding-left: var(--wp--preset--spacing--80);
+}
+.meetup-card {
+    border: 1px solid #c7d1ff;
+    border-radius: 12px;
+}
+.meetup-card__body  { padding: var(--wp--preset--spacing--50); }
+.meetups-ver-todas .wp-block-button__link { border-radius: 100px; }
+
+/* Next event */
+.next-event-card.wp-block-group {
+    border: 2px solid var(--wp--preset--color--primary);
+    border-radius: 12px;
+}
+.next-event-image-col { flex-basis: 46%; }
+.next-event-body      { padding: var(--wp--preset--spacing--80); }
+.event-date-badge {
+    border-radius: 100px;
+    padding: 0.625rem 1.25rem;
+}
+
+/* Channels */
+.wpgranada-channels-section {
+    background-color: #f5f7fa;
+    padding: var(--wp--preset--spacing--100);
+}
+.channel-card              { padding: 2.5rem; }
+.channel-card__icon img    { width: 40px; }
+.channel-card .wp-block-heading { font-weight: 700; }
+
+/* Past events */
+.past-event-card .wp-block-heading {
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Marquee */
+.wpgranada-marquee-items p {
+    color: var(--wp--preset--color--base);
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: clamp(1.1rem, 3vw, 2rem);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Manifiesto */
+.manifest-section.wp-block-columns {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.manifest-col-text  { flex-basis: 45%; }
+.manifest-col-image { flex-basis: 55%; }
+.wpgranada-img-tilted img { border-radius: 20px; }
+
+/* Actividades */
+.actividades-spacer    { height: 2.5rem; }
+.wpgranada-row-sep     { background-color: #D0D5DD; color: #D0D5DD; }
+.actividades-row       { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.actividades-col-num   { flex-basis: 8%; }
+.actividades-col-title { flex-basis: 25%; }
+.actividades-col-desc  { flex-basis: 67%; }
+.actividades-col-num p { font-weight: 700; }
