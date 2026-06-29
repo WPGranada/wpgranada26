@@ -9732,3 +9732,8 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 .footer-nav-menu a:hover { color: #fff; }
 
 .footer-col-menus > .wp-block-group { justify-content: flex-end !important; }
+
+/* Ser Ponente pattern */
+.ser-ponente-title { font-size: clamp(3rem, 2rem + 5vw, 6rem); }
+.ponente-reason__icon { line-height: 1.4; flex-shrink: 0; width: 1.5rem; }
+.ponente-form-card { position: sticky; top: 90px; }
