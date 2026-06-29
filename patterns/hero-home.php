@@ -8,15 +8,15 @@
  */
 ?>
 <!-- wp:group {"metadata":{"categories":["wpgranada"],"patternName":"wpgranada26/hero-home","name":"Hero Home"},"align":"full","className":"hero-home-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|80","right":"var:preset|spacing|80"}}},"backgroundColor":"base"} -->
-<div class="wp-block-group alignfull hero-home-section has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--90);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--80)"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false,"className":"alignwide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|80"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile alignwide"><!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull hero-home-section has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--90);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--80)"><!-- wp:columns {"verticalAlignment":"top","isStackedOnMobile":false,"className":"alignwide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|80"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-top is-not-stacked-on-mobile alignwide"><!-- wp:column {"verticalAlignment":"top","width":"55%"} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:55%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.12em"}},"textColor":"primary","fontSize":"x-small","fontFamily":"body"} -->
 <p class="has-primary-color has-text-color has-body-font-family has-x-small-font-size" style="font-weight:700;letter-spacing:0.12em;text-transform:uppercase">Comunidad Local · Open Web · Granada</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":1,"style":{"typography":{"lineHeight":"0.92","fontWeight":"900","textTransform":"uppercase"}},"textColor":"contrast","fontSize":"colossal","fontFamily":"heading"} -->
-<h1 class="wp-block-heading has-contrast-color has-text-color has-heading-font-family has-colossal-font-size" style="font-weight:900;line-height:0.92;text-transform:uppercase">WordPress Granada</h1>
+<!-- wp:heading {"level":1,"style":{"typography":{"lineHeight":"0.92","fontWeight":"900","textTransform":"uppercase","fontSize":"120px"}},"textColor":"contrast","fontFamily":"heading"} -->
+<h1 class="wp-block-heading has-contrast-color has-text-color has-heading-font-family" style="font-size:120px;font-weight:900;line-height:0.92;text-transform:uppercase">WordPress Granada</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","lineHeight":"1.2"}},"textColor":"primary","fontSize":"xx-large","fontFamily":"heading"} -->
@@ -39,8 +39,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"45%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:query {"queryId":20,"query":{"perPage":1,"pages":0,"offset":0,"postType":"metgs_meeting","order":"desc","orderBy":"date","inherit":false,"sticky":"","parents":[],"format":[]},"layout":{"type":"default"}} -->
+<!-- wp:column {"verticalAlignment":"top","width":"45%"} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:45%"><!-- wp:query {"queryId":20,"query":{"perPage":1,"pages":0,"offset":0,"postType":"metgs_meeting","order":"desc","orderBy":"date","inherit":false,"sticky":"","parents":[],"format":[]},"layout":{"type":"default"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default"}} -->
 <!-- wp:group {"className":"hero-event-card","style":{"spacing":{"blockGap":"0"},"border":{"radius":"16px","color":"var(--wp--preset--color--primary-muted)","width":"1px"}},"backgroundColor":"base"} -->
 <div class="wp-block-group hero-event-card has-border-color has-base-background-color has-background" style="border-color:var(--wp--preset--color--primary-muted);border-width:1px;border-radius:16px"><!-- wp:post-featured-image {"aspectRatio":"16/9","style":{"border":{"radius":"16px 16px 0px 0px"}}} /-->
