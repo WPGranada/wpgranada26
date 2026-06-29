@@ -83,6 +83,8 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
 /* Stat cards */
 .stat-card {
 	border-radius: 12px;
+	background-color: #FFFFFF1A;
+	border: 1px solid #FFFFFF2E;
 }
 
 /* Imagen inclinada con sombra — patrón manifiesto comunidad */
