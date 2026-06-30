@@ -196,6 +196,31 @@ function wpgranada26_sidebar_exclude_current( $query, $block, $page ) {
 	return $query;
 }
 
+add_action( 'wp_footer', 'wpgranada26_mobile_overlay' );
+function wpgranada26_mobile_overlay() {
+	?>
+	<div id="wpgranada-mobile-overlay" class="wpgranada-mobile-overlay" aria-hidden="true">
+		<button class="wpgranada-mobile-overlay__close" aria-label="<?php esc_attr_e( 'Cerrar menú', 'wpgranada26' ); ?>">
+			<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+				<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+			</svg>
+		</button>
+		<img class="wpgranada-mobile-overlay__logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-wpgranada.svg" alt="WordPress Granada" width="160">
+		<?php
+		wp_nav_menu( array(
+			'theme_location' => 'menu-principal',
+			'menu_class'     => 'wpgranada-mobile-overlay__menu',
+			'container'      => false,
+			'fallback_cb'    => false,
+		) );
+		?>
+		<a class="wpgranada-mobile-overlay__cta wp-element-button" href="https://www.meetup.com/es-es/granada-wordpress-meetup/" target="_blank" rel="noreferrer noopener">
+			<?php esc_html_e( 'Únete al Meetup', 'wpgranada26' ); ?>
+		</a>
+	</div>
+	<?php
+}
+
 add_filter( 'upgrader_source_selection', 'wpgranada26_exclude_git_from_upgrade', 10, 4 );
 function wpgranada26_exclude_git_from_upgrade( $source, $remote_source, $upgrader, $hook_extra ) {
 	$git_dir = trailingslashit( $source ) . '.git';
