@@ -8,8 +8,8 @@
         <figure class="wp-block-image site-header__logo"><a href="/"><img src="/wp-content/themes/wpgranada26/assets/images/logo-wpgranada.svg" alt="WordPress Granada" /></a></figure>
         <!-- /wp:image -->
 
-        <!-- wp:group {"style":{"spacing":{"blockGap":"1.5rem"}},"layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap"}} -->
-        <div class="wp-block-group">
+        <!-- wp:group {"style":{"spacing":{"blockGap":"1.5rem"}},"className":"site-header__right","layout":{"type":"flex","justifyContent":"right","flexWrap":"nowrap"}} -->
+        <div class="wp-block-group site-header__right">
 
             <!-- wp:shortcode -->
             [wpgranada_nav]
@@ -29,6 +29,14 @@
 
         </div>
         <!-- /wp:group -->
+
+        <!-- wp:html -->
+        <button class="site-header__hamburger" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- /wp:html -->
 
     </div>
     <!-- /wp:group -->

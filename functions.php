@@ -170,6 +170,14 @@ function wpgranada26_enqueue_styles() {
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
+
+	wp_enqueue_script(
+		'wpgranada26-hamburger',
+		get_template_directory_uri() . '/assets/js/hamburger.js',
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
 }
 
 add_action( 'wp', 'wpgranada26_remove_meeting_content_injection' );
