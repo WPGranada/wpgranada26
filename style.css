@@ -9419,7 +9419,7 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 }
 
 .hero-home-title {
-	font-size: clamp(2.5rem, 1.429rem + 5.357vw, 6.25rem);
+	font-size: clamp(1.5rem, 0.464rem + 5.429vw, 6.25rem);
 	font-weight: 900;
 	line-height: 0.92;
 	text-transform: uppercase;
