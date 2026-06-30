@@ -7,8 +7,8 @@
  * Keywords: comunidad, manifiesto, dos columnas, imagen
  */
 ?>
-<!-- wp:columns {"metadata":{"categories":["wpgranada"],"patternName":"wpgranada26/manifest-comunidad","name":"Manifiesto comunidad"},"className":"alignwide manifest-section","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"},"blockGap":{"left":"4rem"}}}} -->
-<div class="wp-block-columns is-not-stacked-on-mobile alignwide manifest-section" style="padding-top:4rem;padding-bottom:4rem"><!-- wp:column {"verticalAlignment":"center","width":"45%","className":"manifest-col-text"} -->
+<!-- wp:columns {"metadata":{"categories":["wpgranada"],"patternName":"wpgranada26/manifest-comunidad","name":"Manifiesto comunidad"},"className":"alignwide manifest-section","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem","left":"var:preset|spacing|60","right":"var:preset|spacing|60"},"blockGap":{"left":"4rem"}}}} -->
+<div class="wp-block-columns alignwide manifest-section" style="padding-top:4rem;padding-bottom:4rem;padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)"><!-- wp:column {"verticalAlignment":"center","width":"45%","className":"manifest-col-text"} -->
 <div class="wp-block-column is-vertically-aligned-center manifest-col-text" style="flex-basis:45%"><!-- wp:paragraph {"className":"is-style-textos-secundarios"} -->
 <p class="is-style-textos-secundarios">¿Qué es WordPress Granada?</p>
 <!-- /wp:paragraph -->

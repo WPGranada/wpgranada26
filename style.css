@@ -8886,6 +8886,12 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 	display: flex;
 }
 
+@media (max-width: 781px) {
+	.meetups-grid.is-layout-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
 .meetup-card {
 	overflow: hidden;
 	transition: box-shadow 0.2s ease;
@@ -9243,6 +9249,8 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 .manifest-section.wp-block-columns {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
+	padding-left: var(--wp--preset--spacing--60);
+	padding-right: var(--wp--preset--spacing--60);
 }
 
 .manifest-col-text {
@@ -9700,6 +9708,11 @@ body .wp-site-blocks>.wp-block-template-part:first-child {
 .about-h1 { font-size: clamp(2.5rem, 1.786rem + 3.57vw, 5rem); line-height: 0.95; }
 .about-hero-img img { transform: rotate(3deg); box-shadow: 0 24px 60px rgba(16,24,40,0.18), 0 6px 16px rgba(56,88,233,0.10); }
 .organize-img img { transform: rotate(-3deg); box-shadow: 0 24px 60px rgba(16,24,40,0.18), 0 6px 16px rgba(56,88,233,0.10); }
+
+@media (max-width: 781px) {
+    .organize-section > .wp-block-column:first-child { order: 2; }
+    .organize-section > .wp-block-column:last-child { order: 1; }
+}
 
 /* Single Meeting template */
 .single-meeting-hero { padding-top: 3rem; padding-bottom: 3rem; }

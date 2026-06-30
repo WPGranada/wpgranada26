@@ -7,8 +7,8 @@
  * Keywords: organización, comunidad, meetup, cómo
  */
 ?>
-<!-- wp:columns {"verticalAlignment":"center","metadata":{"categories":["wpgranada"],"patternName":"wpgranada26/how-we-organize","name":"Cómo nos organizamos"},"className":"is-not-stacked-on-mobile alignwide organize-section","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"},"blockGap":{"left":"4rem"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile alignwide organize-section" style="padding-top:4rem;padding-bottom:4rem"><!-- wp:column {"verticalAlignment":"center","width":"45%"} -->
+<!-- wp:columns {"verticalAlignment":"center","metadata":{"categories":["wpgranada"],"patternName":"wpgranada26/how-we-organize","name":"Cómo nos organizamos"},"className":"alignwide organize-section","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem","left":"var:preset|spacing|60","right":"var:preset|spacing|60"},"blockGap":{"left":"4rem"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center alignwide organize-section" style="padding-top:4rem;padding-bottom:4rem;padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)"><!-- wp:column {"verticalAlignment":"center","width":"45%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"organize-img","style":{"border":{"radius":"20px","width":"0px","style":"none"}}} -->
 <figure class="wp-block-image size-full has-custom-border organize-img"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/about-hero.png" alt="Comunidad WordPress Granada organizando meetups" style="border-style:none;border-width:0px;border-radius:20px"/></figure>
 <!-- /wp:image --></div>
