@@ -28,10 +28,12 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","className":"newsletter-col"} -->
 <div class="wp-block-column is-vertically-aligned-center newsletter-col" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:gravityforms/form {"formId":"1","title":false,"description":false,"inputPrimaryColor":"#204ce5"} /-->
+<div class="wp-block-group"><!-- wp:shortcode -->
+[gravityform id="1" title="false" description="false" ajax="true"]
+<!-- /wp:shortcode -->
 
-<!-- wp:paragraph {"className":"has-primary-muted-color has-text-color has-body-font-family has-x-small-font-size lh-normal","style":{"typography":{"lineHeight":"1.5"}},"textColor":"primary-muted","fontSize":"x-small"} -->
-<p class="has-primary-muted-color has-text-color has-body-font-family has-x-small-font-size lh-normal" style="line-height:1.5">Al enviar aceptas la <a href="/politica-de-privacidad/">política de privacidad</a>. Te puedes dar de baja en un clic.</p>
+<!-- wp:paragraph {"className":"newsletter-legal-note has-primary-muted-color has-text-color has-body-font-family has-x-small-font-size lh-normal","style":{"typography":{"lineHeight":"1.5"}},"textColor":"primary-muted","fontSize":"x-small"} -->
+<p class="newsletter-legal-note has-primary-muted-color has-text-color has-body-font-family has-x-small-font-size lh-normal" style="line-height:1.5">Al enviar aceptas la <a href="/politica-de-privacidad/">política de privacidad</a>. Puedes darte de baja en cualquier momento.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

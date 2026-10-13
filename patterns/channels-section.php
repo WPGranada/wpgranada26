@@ -3,8 +3,8 @@
  * Title: Canales de la Comunidad
  * Slug: wpgranada26/channels-section
  * Categories: wpgranada
- * Description: Grid de tres tarjetas con los canales de comunicación de la comunidad.
- * Keywords: canales, meetup, youtube, telegram, contacto
+ * Description: Grid de cinco tarjetas con los canales de comunicación de la comunidad.
+ * Keywords: canales, meetup, youtube, instagram, linkedin, tiktok, contacto
  */
 ?>
 <!-- wp:group {"metadata":{"categories":["wpgranada"],"patternName":"wpgranada26/channels-section","name":"Canales de la Comunidad"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|100","right":"var:preset|spacing|100"},"blockGap":"var:preset|spacing|80"},"color":{"background":"#f5f7fa"}}} -->
@@ -18,9 +18,8 @@
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:columns {"className":"alignwide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"alignwide community-channels-grid","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide community-channels-grid"><!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
 <div class="wp-block-group channel-card has-border-color has-base-background-color has-background"><!-- wp:image {"width":"40px","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized channel-card__icon"><img src="/wp-content/themes/wpgranada26/assets/images/meetup.svg" alt="Meetup"/></figure>
 <!-- /wp:image -->
@@ -36,11 +35,9 @@
 <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"textColor":"primary","fontSize":"medium","fontFamily":"body"} -->
 <p class="has-primary-color has-text-color has-body-font-family has-medium-font-size fw-semibold"><a href="https://www.meetup.com/es-ES/wordpress-granada/">Ir a Meetup →</a></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
+<!-- /wp:group -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
 <div class="wp-block-group channel-card has-border-color has-base-background-color has-background"><!-- wp:image {"width":"40px","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized channel-card__icon"><img src="/wp-content/themes/wpgranada26/assets/images/youtube.svg" alt="YouTube"/></figure>
 <!-- /wp:image -->
@@ -56,27 +53,60 @@
 <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"textColor":"primary","fontSize":"medium","fontFamily":"body"} -->
 <p class="has-primary-color has-text-color has-body-font-family has-medium-font-size fw-semibold"><a href="https://youtube.com/@wpgranada">Ver canal →</a></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
+<!-- /wp:group -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
 <div class="wp-block-group channel-card has-border-color has-base-background-color has-background"><!-- wp:image {"width":"40px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized channel-card__icon"><img src="/wp-content/themes/wpgranada26/assets/images/telegram.svg" alt="Telegram"/></figure>
+<figure class="wp-block-image size-full is-resized channel-card__icon"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E4405F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='5'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Ccircle cx='17.5' cy='6.5' r='.75' fill='%23E4405F' stroke='none'/%3E%3C/svg%3E" alt="Instagram"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"fontSize":"x-large","fontFamily":"heading"} -->
-<h3 class="wp-block-heading has-heading-font-family has-x-large-font-size">Telegram</h3>
+<h3 class="wp-block-heading has-heading-font-family has-x-large-font-size">Instagram</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"textColor":"tertiary","fontSize":"medium","fontFamily":"body"} -->
-<p class="has-tertiary-color has-text-color has-body-font-family has-medium-font-size lh-relaxed">Únete a nuestro grupo para charlar y estar al día con la comunidad</p>
+<p class="has-tertiary-color has-text-color has-body-font-family has-medium-font-size lh-relaxed">Descubre las novedades, eventos y momentos de la comunidad WordPress Granada</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"textColor":"primary","fontSize":"medium","fontFamily":"body"} -->
-<p class="has-primary-color has-text-color has-body-font-family has-medium-font-size fw-semibold"><a href="#">Unirse →</a></p>
+<p class="has-primary-color has-text-color has-body-font-family has-medium-font-size fw-semibold"><a href="https://www.instagram.com/closemarketing/" target="_blank" rel="noopener noreferrer">Seguir en Instagram →</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
+<div class="wp-block-group channel-card has-border-color has-base-background-color has-background"><!-- wp:image {"width":"40px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized channel-card__icon"><img src="/wp-content/themes/wpgranada26/assets/images/linkedin.svg" alt="LinkedIn"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"fontSize":"x-large","fontFamily":"heading"} -->
+<h3 class="wp-block-heading has-heading-font-family has-x-large-font-size">LinkedIn</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"textColor":"tertiary","fontSize":"medium","fontFamily":"body"} -->
+<p class="has-tertiary-color has-text-color has-body-font-family has-medium-font-size lh-relaxed">Conecta con profesionales, colaboradores y miembros de la comunidad WordPress Granada</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"textColor":"primary","fontSize":"medium","fontFamily":"body"} -->
+<p class="has-primary-color has-text-color has-body-font-family has-medium-font-size fw-semibold"><a href="https://www.linkedin.com/company/closemarketing/posts/" target="_blank" rel="noopener noreferrer">Seguir en LinkedIn →</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"channel-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem","left":"2.5rem","right":"2.5rem"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"12px","color":"#c7d1ff","width":"1px"}},"backgroundColor":"base","layout":{"type":"default"}} -->
+<div class="wp-block-group channel-card has-border-color has-base-background-color has-background"><!-- wp:image {"width":"40px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized channel-card__icon"><img src="/wp-content/themes/wpgranada26/assets/images/tiktok.svg" alt="TikTok"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"fontSize":"x-large","fontFamily":"heading"} -->
+<h3 class="wp-block-heading has-heading-font-family has-x-large-font-size">TikTok</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"textColor":"tertiary","fontSize":"medium","fontFamily":"body"} -->
+<p class="has-tertiary-color has-text-color has-body-font-family has-medium-font-size lh-relaxed">Disfruta de contenidos breves, consejos y momentos de nuestros eventos</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"textColor":"primary","fontSize":"medium","fontFamily":"body"} -->
+<p class="has-primary-color has-text-color has-body-font-family has-medium-font-size fw-semibold"><a href="https://www.tiktok.com/@closemarketing" target="_blank" rel="noopener noreferrer">Seguir en TikTok →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
