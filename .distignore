@@ -50,3 +50,5 @@ docs/
 # Lang
 *.pot
 *.po
+# Local development metadata
+skills-lock.json
